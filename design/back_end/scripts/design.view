@@ -1,0 +1,12 @@
+create_library_set -name slow -timing {../../../../../library/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib}
+create_library_set -name fast -timing {../../../../../library/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib}
+
+create_constraint_mode -name design -sdc_files {inputs/design.sdc}
+
+create_delay_corner -name slow_max -library_set {slow}
+create_delay_corner -name fast_min -library_set {fast}
+
+create_analysis_view -name design_slow_max -constraint_mode {design} -delay_corner {slow_max}
+create_analysis_view -name design_fast_min -constraint_mode {design} -delay_corner {fast_min}
+
+set_analysis_view -setup {design_slow_max} -hold {design_fast_min}

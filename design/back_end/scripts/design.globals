@@ -1,0 +1,13 @@
+set defHierChar {/}
+set init_design_settop 0
+set init_pwr_net {VDD}
+set init_gnd_net {VSS}
+set init_lef_file {../../../../../library/Back_End/lef/NangateOpenCellLibrary.lef}
+#set init_lef_file {/home/projects/vlsi/libraries/65lpe/ref_lib/arm/std_cells/hvt/lef/sc9_cmos10lpe_base_hvt.lef}
+set init_mmmc_file {../../../scripts/design.view}
+set init_verilog {inputs/design.v}
+set lsgOCPGainMult 1.000000
+set pegDefaultResScaleFactor 1.000000
+set pegDetailResScaleFactor 1.000000
+set timing_library_float_precision_tol 0.000010
+

@@ -1,0 +1,15 @@
+set design = $1
+cp -rf template $design
+cd $design/work/
+foreach dir ( original ) 
+   cd run_${dir}/inputs
+   unlink design.v 
+   ln -s ../../../../../front_end/$design/${design}.v design.v 
+   ln -s ../../../../../front_end/$design/${design}.sdc design.sdc
+   cd -
+end
+
+cd run_original
+source cleanup
+source run
+cd ../../../

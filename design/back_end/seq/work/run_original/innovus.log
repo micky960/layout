@@ -1,0 +1,63 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v16.15-s078_1, built Fri Feb 24 14:23:00 PST 2017
+Options:	-overwrite -file ./layout.tcl 
+Date:		Thu Mar  1 13:15:01 2018
+Host:		aduae260-lap (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB)
+OS:		CentOS release 6.9 (Final)
+
+License:
+		invs	Innovus Implementation System	16.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+Sourcing file "./layout.tcl" ...
+<CMD> set defHierChar /
+<CMD> set init_design_settop 0
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /home/projects/vlsi/libraries/65lpe/ref_lib/arm/std_cells/hvt/lef/sc9_cmos10lpe_base_hvt.lef
+<CMD> set init_mmmc_file ../../../scripts/design.view
+<CMD> set init_verilog inputs/design.v
+<CMD> set pegDefaultResScaleFactor 1.000000
+<CMD> set pegDetailResScaleFactor 1.000000
+<CMD> set timing_library_float_precision_tol 0.000010
+<CMD> init_design
+#- Begin Load MMMC data ... (date=03/01 13:15:12, mem=489.1M)
+#- End Load MMMC data ... (date=03/01 13:15:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=489.1M, current mem=489.1M)
+
+
+Loading LEF file /home/projects/vlsi/libraries/65lpe/ref_lib/arm/std_cells/hvt/lef/sc9_cmos10lpe_base_hvt.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/projects/vlsi/libraries/65lpe/ref_lib/arm/std_cells/hvt/lef/sc9_cmos10lpe_base_hvt.lef at line 24.
+**ERROR: (IMPLF-328):	The layer 'M1' specified in macro pin 'A2DFFQN_X0P5M_A9TH.A' does not exist
+**ERROR: (IMPLF-53):	The layer 'M1' referenced in pin 'A' in macro 'A2DFFQN_X0P5M_A9TH' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-53' for more detail.
+**ERROR: (IMPLF-3):	Error found when processing LEF file '/home/projects/vlsi/libraries/65lpe/ref_lib/arm/std_cells/hvt/lef/sc9_cmos10lpe_base_hvt.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Innovus' again.
+Type 'man IMPLF-3' for more detail.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Innovus.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing './layout.tcl' was returned and script processing was stopped. Review the following error in './layout.tcl' then restart.
+**ERROR: (IMPSYT-6693):	Error message: ./layout.tcl: **ERROR: (IMPSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Please exit the tools and fix the errors first, then re-load design again.
+.
+<CMD> win
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 504.703M, initial mem = 166.551M) ***
+*** Message Summary: 0 warning(s), 9 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:24.1, real=0:04:50, mem=504.7M) ---

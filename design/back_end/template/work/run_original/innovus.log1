@@ -1,0 +1,454 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+Options:	-no_gui 
+Date:		Sat May 16 18:22:09 2020
+Host:		aduae260-lap (x86_64 w/Linux 2.6.32-754.14.2.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB)
+OS:		CentOS release 6.10 (Final)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (1550 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> man addRing
+<CMD> man addRing
+<CMD> man setDesignMode
+<CMD> man globalNetConnect
+<CMD> man sroute
+<CMD> man setPlaceMode
+<CMD> setPlaceMode -help
+
+Usage: setPlaceMode [-help] [-reset] [-activity_power_driven {false|true}] [-activity_power_driven_effort {none|standard|high}]
+                    [-place_design_floorplan_mode {true|false}] [-place_design_refine_place {true|false}]
+                    [-place_detail_allow_border_pin_abut {true|false}] [-place_detail_check_cut_spacing {true|false}]
+                    [-place_detail_check_inst_space_group {true|false}] [-place_detail_check_route {true|false}]
+                    [-place_detail_color_aware_legal {true|false}] [-place_detail_context_aware_legal {none|all|optional|required|user}]
+                    [-place_detail_eco_max_distance <micron>] [-place_detail_eco_priority_insts {placed|fixed|eco}]
+                    [-place_detail_fixed_shifter {true|false}] [-place_detail_honor_inst_pad {true|false}]
+                    [-place_detail_io_pin_blockage {true|false}] [-place_detail_irdrop_aware_effort {none|low|medium|high}]
+                    [-place_detail_legalization_inst_gap <site>] [-place_detail_max_shifter_column_depth <value>]
+                    [-place_detail_max_shifter_depth <value>] [-place_detail_max_shifter_row_depth <value>]
+                    [-place_detail_no_filler_without_implant {true|false}] [-place_detail_pad_fixed_insts {true|false}]
+                    [-place_detail_preroute_as_obs {layerNum ...}] [-place_detail_preserve_routing {true|false}]
+                    [-place_detail_remove_affected_routing {true|false}] [-place_detail_swap_eeq_cells {true|false}]
+                    [-place_detail_use_check_drc {true|false}] [-place_detail_use_GA_filler_groups {true|false}]
+                    [-place_detail_use_no_diffusion_one_site_filler {true|false}]
+                    [-place_detail_wire_length_opt_effort {none|medium|high|extreme}]
+                    [-place_global_auto_blockage_in_channel {none|soft|partial}] [-place_global_clock_gate_aware {true|false}]
+                    [-place_global_clock_power_driven {true|false}] [-place_global_clock_power_driven_effort {none|standard|high}]
+                    [-place_global_cong_effort {low|medium|high|auto}] [-place_global_enable_distributed_place {true|false}]
+                    [-place_global_group_flop_to_macro {true|false}] [-place_global_group_flop_to_macro_level <value>]
+                    [-place_global_group_flop_to_macro_list <value>] [-place_global_ignore_scan {true|1|false|0|auto}]
+                    [-place_global_ignore_spare {true|false}] [-place_global_max_density <value>] [-place_global_module_aware_spare {true|false}]
+                    [-place_global_module_padding {<module> <factor>}] [-place_global_place_io_pins {true|false}]
+                    [-place_global_reorder_scan {true|false}] [-place_global_soft_guide_strength {low|medium|high}]
+                    [-place_global_timing_effort {medium|high}] [-place_global_uniform_density {false|true}] [-place_hard_fence {true|false}]
+                    [-place_opt_post_place_tcl <string>] [-place_opt_run_global_place {none|seed|full}]
+                    [-place_spare_update_timing_graph {true|false}]
+
+-help                                      # Prints out the command usage
+-reset                                     # Resets all or specified options to default value
+-activity_power_driven {false|true}        # identifies and constrains power-critical nets to reduce switching power
+                                           # (enums={false true}, default=false)
+-activity_power_driven_effort {none|standard|high}
+                                           # -activity_power_driven_effort mode
+                                           # (enums={none standard high}, default=standard)
+-place_design_floorplan_mode {true|false}
+                                           # run placement in floorplan mode (bool, default=false)
+-place_design_refine_place {true|false}    # if set to false, calls to refinePlace from other apps (such as placeDesign, optDesign) will not run
+                                           # refinePlace (bool, default=true)
+-place_detail_allow_border_pin_abut {true|false}
+                                           # allow instance abut with its neighbors when it has pins near by the cell boundary (bool, default=false)
+-place_detail_check_cut_spacing {true|false}
+                                           # Check via cut spacing during DRC checking
+                                           # (bool, default=false)
+-place_detail_check_inst_space_group {true|false}
+                                           # check inst space group (bool, default=false)
+-place_detail_check_route {true|false}     # do DRV checks against FIXED wires during legalization, along with preroutes (bool, default=false)
+-place_detail_color_aware_legal {true|false}
+                                           # enable adjacent cell color conflict check in legalization (bool, default=false)
+-place_detail_context_aware_legal {none|all|optional|required|user}
+                                           # specify the types of cell context rules the placer needs to honor. The argument values [optional,
+                                           # required, user] can be used separately or combined, but they are exclusive to all | none
+                                           # (default=all) (enums={none all optional required user}_list, default=all)
+-place_detail_eco_max_distance <micron>    # specify max distance (in micron) for refinePlace ECO mode (float, default=0, min=0, max=9999)
+-place_detail_eco_priority_insts {placed|fixed|eco}
+                                           # select instance priority for refinePlace ECO mode (enums={placed fixed eco}, default=placed)
+-place_detail_fixed_shifter {true|false}
+                                           # mark shifters FIXED once placed (bool, default=false)
+-place_detail_honor_inst_pad {true|false}
+                                           # honor padding from specifyInstPad in detail placement
+                                           # (bool, default=false)
+-place_detail_io_pin_blockage {true|false}
+                                           # ioPins from top-level are treated as pre-routes during DRV checks     in legalization (bool, default=false)
+-place_detail_irdrop_aware_effort {none|low|medium|high}
+                                           # selects which IR drop optimization effort level to use during refinePlace (enums={none low medium high}, default=none)
+-place_detail_legalization_inst_gap <site>
+                                           # minimum gap between instances (unit sites)
+                                           # (int, default=0)
+-place_detail_max_shifter_column_depth <value>
+                                           # maximum distance from vertical power domain boundary that a shifter can be placed (float, default=9999)
+-place_detail_max_shifter_depth <value>    # maximum distance from a horizontal or vertical power domain bounary that a shifter can be placed
+                                           # (float, default=9999)
+-place_detail_max_shifter_row_depth <value>
+                                           # maximum distance from a horizontal power domain bounary that a shifter can be placed (float, default=9999)
+-place_detail_no_filler_without_implant {true|false}
+                                           # there is no cell which  has no implant obs
+                                           # (bool, default=false)
+-place_detail_pad_fixed_insts {true|false}
+                                           # honor cell-padding for FIXED instances in refinePlace
+                                           # (bool, default=false)
+-place_detail_preroute_as_obs {layerNum ...}
+                                           # specify layers on which preroute are taken as OBS
+                                           # (string, default="")
+-place_detail_preserve_routing {true|false}
+                                           # do not delete routed wires during refinePlace
+                                           # (bool, default=false)
+-place_detail_remove_affected_routing {true|false}
+                                           # delete only wires whose nets were touched due to moved cells (bool, default=false)
+-place_detail_swap_eeq_cells {true|false}
+                                           # replace master cells by its EEQ cell during legalization, to keep max-dist move low (bool, default=false)
+-place_detail_use_check_drc {true|false}
+                                           # Use FGC based DRC engine in legalization
+                                           # (bool, default=false)
+-place_detail_use_GA_filler_groups {true|false}
+                                           # filler cell insts will only be replaced by logic insts that belong to same GA groups. (bool, default=false)
+-place_detail_use_no_diffusion_one_site_filler {true|false}
+                                           # override -fillerGapMinGap to 0 and all source-drain spacing rule to 1 site during legalizing (bool, default=false)
+-place_detail_wire_length_opt_effort {none|medium|high|extreme}
+                                           # selects which wire-length optimization effort level to use during refinePlace (enums={none medium high extreme}, default=medium)
+-place_global_auto_blockage_in_channel {none|soft|partial}
+                                           # Placement will (temporarily) block channels between areas with limited routing capacity (enums={none soft partial}, default=none)
+-place_global_clock_gate_aware {true|false}
+                                           # find better placement for clock gating elements towards the center of gravity for fanout (bool, default=true)
+-place_global_clock_power_driven {true|false}
+                                           # clock power driven (bool, default=false)
+-place_global_clock_power_driven_effort {none|standard|high}
+                                           # -place_global_clock_power_driven_effort mode (enums={none standard high}, default=standard)
+-place_global_cong_effort {low|medium|high|auto}
+                                           # level of effort for congestion driven global placer (enums={low medium high auto}, default=auto)
+-place_global_enable_distributed_place {true|false}
+                                           # enable distributed placement platform
+                                           # (bool, default=false)
+-place_global_group_flop_to_macro {true|false}
+                                           # group flops to Macro (bool, default=false)
+-place_global_group_flop_to_macro_level <value>
+                                           # groupFlopToMacroLevel value
+                                           # (int, default=1, min=0, max=99)
+-place_global_group_flop_to_macro_list <value>
+                                           # List of macros for which nets connecting to them will be pulled to macros (string, default="")
+-place_global_ignore_scan {true|1|false|0|auto}
+                                           # ignore scan net during placement
+                                           # (enums={true 1 false 0 auto}, default=true)
+-place_global_ignore_spare {true|false}    # discard spare cell connections during global placement (bool, default=false)
+-place_global_max_density <value>          # placement strives to not let density exceed given value, in any part of design (float, default=-1)
+-place_global_module_aware_spare {true|false}
+                                           # Spare insts are placed randomly along with the containing module's insts (bool, default=false)
+-place_global_module_padding {<module> <factor>}
+                                           # define the padding factor for the given module to reduce the local density and congestion (string, default="")
+-place_global_place_io_pins {true|false}
+                                           # place IO Pins concurrently with std.cell placement, and do layer assignment (bool, default=false)
+-place_global_reorder_scan {true|false}    # turn on reorder scan during placement (bool, default=true)
+-place_global_soft_guide_strength {low|medium|high}
+                                           # level of effort for user definded softGuide for global placer (enums={low medium high}, default=low)
+-place_global_timing_effort {medium|high}
+                                           # level of effort for timing driven global placer
+                                           # (enums={medium high}, default=medium)
+-place_global_uniform_density {false|true}
+                                           # enable even cell distribution for designs with less than 70% utilization (enums={false true}, default=false)
+-place_hard_fence {true|false}             # honor fence and region constraints in refinePlace (bool, default=true)
+-place_opt_post_place_tcl <string>         # a tcl script to be sourced after initial placement and before preCTS optimization in
+                                           # place_opt_design (string, default="")
+-place_opt_run_global_place {none|seed|full}
+                                           # place opt run global place
+                                           # (enums={none seed full}, default=full)
+-place_spare_update_timing_graph {true|false}
+                                           # update timing graph during placeSpareModule
+                                           # (bool, default=true)
+<CMD> man place_opt_design
+<CMD> man checkPlace
+<CMD> man trialRoute
+
+Usage: trialRoute [-help] [-PDAwareSelNet] [-PDLengthThresholdX <float>] [-PDLengthThresholdY <float>] [-PDNoAwareSelNet] [-autoSkipTracks]
+                  [-blockageCostMultiple <multiple>] [-clkNetRoutingDemandInTracks <integer>] [-dontUseM1WireStrictly]
+                  [-excludePartitionFile <file>] [-extendM1PinToM2] [-fastRouteForPinAssign] [-floorPlanMode] [-gcellSize {spec}]
+                  [-gcellSizeX <multiplier>] [-gcellSizeY <multiplier>] [-handleClockPreroute] [-handleEachPD] [-handleEachPartition] [-handlePD]
+                  [-handlePDComplex] [-handlePartFixedNets] [-handlePartition] [-handlePartitionComplex] [-highEffort] [-honorActiveLogicView]
+                  [-honorPin] [-ignoreBumpNets] [-intraNets] [-maxDetourRatio <ratio>] [-maxRouteLayer {layerIndex | layerName}]
+                  [-minRouteLayer {layerIndex | layerName}] [-noDetour] [-noObstruct4] [-noPinGuide] [-printSections] [-printWiresOnRTBlk]
+                  [-printWiresOnRTBlkFile <file>] [-printWiresOnRTBlkLong] [-printWiresOnRTBlkLongFile <file>] [-printWiresOutsideBusguide]
+                  [-ptnAwareSelNet] [-ptnBdryExt {microns}] [-ptnBdryShr <microns>] [-ptnNoAwareSelNet] [-resetRTBlockage <file>]
+                  [-routeBasedBBPin] [-routeGuide <file>] [-selMarkedNet] [-selMarkedNetOnly] [-selNet <file>] [-selNetOnly <file>]
+                  [-skipTracks {spec}] [-useM1]
+
+-help                                      # Prints out the command usage
+-PDAwareSelNet                             # Route selected nets with power domain handling (bool, optional)
+-PDLengthThresholdX <float>                # PD max width to allow routes to cross it (float, optional)
+-PDLengthThresholdY <float>                # PD max height to allow routes to cross it (float, optional)
+-PDNoAwareSelNet                           # Route unselected nets with power domain handling (bool, optional)
+-autoSkipTracks                            # SkipTracks automatically based on NDRs (bool, optional)
+-blockageCostMultiple <multiple>           # Increase cost crossing routing blockage (use with thin blockages) (int, optional, min=1, max=100)
+-clkNetRoutingDemandInTracks <integer>     # clkNetRoutingDemandInTracks {1-5} (int, optional, min=1, max=5)
+-dontUseM1WireStrictly                     # strictly avoid using M1 wires (bool, optional)
+-excludePartitionFile <file>               # Ignore partition names not in file (string, optional)
+-extendM1PinToM2                           # Extend M1 terms to M2 (bool, optional)
+-fastRouteForPinAssign                     # Fast route with partitions for PinAssign excluding intra nets (bool, optional)
+-floorPlanMode                             # Route fast with bigger (4x2) gcell size (bool, optional)
+-gcellSize {spec}                          # Multipliers for gcell size in X/Y directions like 2x2 (string, optional)
+-gcellSizeX <multiplier>                   # Multiplier for gcell size in X direction (int, optional, min=1, max=4)
+-gcellSizeY <multiplier>                   # Multiplier for gcell size in Y direction (int, optional, min=1, max=2)
+-handleClockPreroute                       # Reroute pre-routed clock nets (bool, optional)
+-handleEachPD                              # Route each intra-power domain net groups separately (for abutted PDs) (bool, optional)
+-handleEachPartition                       # Route each intra-partition net groups separately (for abutted partitions) (bool, optional)
+-handlePD                                  # Handle power domains (default/intra/inter) (bool, optional)
+-handlePDComplex                           # Handle power domains (default/intra/inter-combinations) (bool, optional)
+-handlePartFixedNets                       # Finish partial route with FIXED wires (use carefully) (bool, optional)
+-handlePartition                           # Handle partitions (top/intra/inter) (bool, optional)
+-handlePartitionComplex                    # Handle partitions (top/intra/interr-combinations) (bool, optional)
+-highEffort                                # Do more iterations during global routing (bool, optional)
+-honorActiveLogicView                      # Honor Active Logic View (bool, optional)
+-honorPin                                  # Honor partiton pins (bool, optional)
+-ignoreBumpNets                            # ignoreBumpNets (bool, optional)
+-intraNets                                 # FastRouteForPinAssign including intra partition nets (bool, optional)
+-maxDetourRatio <ratio>                    # Reroute 2-terms nets with more than given detour ratio after phase 1f
+                                           # (float, optional, min=1, max=1000)
+-maxRouteLayer {layerIndex | layerName}    # Set the maximum routing layer (string, optional)
+-minRouteLayer {layerIndex | layerName}    # Set the minimum routing layer (string, optional)
+-noDetour                                  # Skip phase 1e/1f (not optimize congestion) (bool, optional)
+-noObstruct4                               # Don't move blocked terms (bool, optional)
+-noPinGuide                                # Don't honor pin guides (bool, optional)
+-printSections                             # Report congestions by dividing 2x2 chip sections (bool, optional)
+-printWiresOnRTBlk                         # Print wires that overlap routing blockages (bool, optional)
+-printWiresOnRTBlkFile <file>              # Print wires that overlap routing blockages to given file (string, optional)
+-printWiresOnRTBlkLong                     # Print only long wires that overlap routing blockages (bool, optional)
+-printWiresOnRTBlkLongFile <file>          # Print only long wires that overlap routing blockages to given file (string, optional)
+-printWiresOutsideBusguide                 # Print wires going outside bus guides (bool, optional)
+-ptnAwareSelNet                            # Route selected nets with partition handling (bool, optional)
+-ptnBdryExt {microns}                      # Extend partition boundary for routing (int, optional)
+-ptnBdryShr <microns>                      # Shrink partition boundary for routing (int, optional)
+-ptnNoAwareSelNet                          # Route unselected nets with partition handling (bool, optional)
+-resetRTBlockage <file>                    # add/delete blockages temporarily (string, optional)
+-routeBasedBBPin                           # routeBasedBBPin (bool, optional)
+-routeGuide <file>                         # Route based on route guides (string, optional)
+-selMarkedNet                              # Route GUI selected nets first (bool, optional)
+-selMarkedNetOnly                          # Route GUI selected nets only (bool, optional)
+-selNet <file>                             # Route selected nets in file first (string, optional)
+-selNetOnly <file>                         # Route selected nets only (string, optional)
+-skipTracks {spec}                         # Remove 1 M3 track of 4 temporarily with "M3 1:4" (string, optional)
+-useM1                                     # Use M1 for routing (bool, optional)
+
+
+<CMD> man extractRC
+<CMD> man extractRC
+<CMD> man extractRC
+<CMD> man setNanoRouteMode
+invalid command name "mansetNanoRouteMode"
+<CMD> setNanoRouteMode -help
+
+Usage: setNanoRouteMode [-help] [-reset] [-dbAdjustAutoViaWeight {true|false}] [-dbAllowInstanceOverlaps {true|false}]
+                        [-dbIgnoreFollowPinShape {true|false}] [-dbProcessNode <value>] [-dbRcExtractionCorner <value>]
+                        [-dbSkipAnalog {true|false}] [-dbViaWeight <value>] [-drouteAntennaEcoListFile <value>] [-drouteAutoStop {true|false}]
+                        [-drouteEndIteration <value>] [-drouteFixAntenna {true|false}] [-drouteFixViaDensityViolationAfterViaSwap {true|false}]
+                        [-drouteMaskOnlyOnLayer <value>] [-drouteMinLengthForWireSpreading <value>] [-drouteMinLengthForWireWidening <value>]
+                        [-drouteMinSlackForWireOptimization <value>] [-drouteNoTaperInLayers <value>] [-drouteNoTaperOnOutputPin <value>]
+                        [-drouteOnGridOnly <value>] [-droutePostRouteLithoRepair {true|false}] [-droutePostRouteSpreadWire <value>]
+                        [-droutePostRouteSwapVia <value>] [-droutePostRouteSwapViaPriority <value>] [-droutePostRouteWidenWire <value>]
+                        [-droutePostRouteWidenWireRule <value>] [-drouteSearchAndRepair {true|false}] [-drouteSignOffEffort <value>]
+                        [-drouteUseMultiCutViaEffort <value>] [-envNumberFailLimit <value>] [-envNumberProcessor <value>]
+                        [-envNumberWarningLimit <value>] [-envThirdPartyData {true|false}] [-hfrouteConstraintFile <value>]
+                        [-hfrouteConstraintGroups <value>] [-hfrouteMatchReportFile <value>] [-hfrouteNumReserveLayers <value>]
+                        [-hfrouteRemoveFloatingShield {true|false}] [-hfrouteSearchRepair <value>] [-hfrouteShieldTrimLength <value>]
+                        [-routeAllowPinAsFeedthrough <value>] [-routeAntennaCellName <value>] [-routeAntennaPinLimit <value>]
+                        [-routeBottomRoutingLayer <value>] [-routeConcurrentMinimizeViaCountEffort <value>] [-routeConnectToBump {true|false}]
+                        [-routeDesignFixClockNets {true|false}] [-routeDesignRouteClockNetsFirst {true|false}]
+                        [-routeEnableNdrSiLimitLength <value>] [-routeEnforceNdrOnSpecialNetWire <value>] [-routeExtraViaEnclosure <value>]
+                        [-routeFixTopLayerAntenna {true|false}] [-routeHonorPowerDomain {true|false}]
+                        [-routeIgnoreAntennaTopCellPin {true|false}] [-routeInsertAntennaDiode {true|false}]
+                        [-routeInsertDiodeForClockNets {true|false}] [-routeRelaxedNdrSpacingToPGNets <value>]
+                        [-routeReserveSpaceForMultiCut {true|false}] [-routeReverseDirection <value>] [-routeSelectedNetOnly {true|false}]
+                        [-routeShieldCrosstieOffset <value>] [-routeStrictlyHonorNonDefaultRule <value>] [-routeStripeLayerRange <value>]
+                        [-routeTieNetToShape <value>] [-routeTopRoutingLayer <value>] [-routeTrimPullBackDistanceFromBoundary <value>]
+                        [-routeTrunkWithClusterTargetSize <value>] [-routeUnconnectedPorts {true|false}] [-routeWithEco {true|false}]
+                        [-routeWithLithoDriven {true|false}] [-routeWithSiDriven {true|false}] [-routeWithTimingDriven {true|false}]
+                        [-routeWithViaInPin <value>] [-routeWithViaInPinSingleMask {true|false}] [-routeWithViaOnlyForMacroCellPin <value>]
+                        [-routeWithViaOnlyForStandardCellPin <value>]
+
+-help                                     # Prints out the command usage
+-reset                                    # Resets all or specified options to default value
+-dbAdjustAutoViaWeight {true|false}       # adjust auto via weight for via swapping (bool, default=true)
+-dbAllowInstanceOverlaps {true|false}     # don't do instance overlap check (bool, default=false)
+-dbIgnoreFollowPinShape {true|false}      # Ignore follow pin via shapes (bool, default=false)
+-dbProcessNode <value>                    # Specify the process node (string, default="")
+-dbRcExtractionCorner <value>             # specific which RC extraction corner to use in routing (string, default="")
+-dbSkipAnalog {true|false}                # skip routing nets or pins marked + USE ANALOG in the DEF file (bool, default=false)
+-dbViaWeight <value>                      # set weight for vias (string, default="")
+-drouteAntennaEcoListFile <value>         # set file name for antenna eco list (string, default="")
+-drouteAutoStop {true|false}              # control whether Nanoroute continues routing if there are many violations (bool, default=true)
+-drouteEndIteration <value>               # specify the last iteration pass in a detailed routing step (int, default=0)
+-drouteFixAntenna {true|false}            # fix antenna violation by jumping metal layers (bool, default=true)
+-drouteFixViaDensityViolationAfterViaSwap {true|false}
+                                          # fix via density violations after via swapping
+                                          # (bool, default=false)
+-drouteMaskOnlyOnLayer <value>            # only defined mask can be used for the layers (string, default=false)
+-drouteMinLengthForWireSpreading <value>
+                                          # specify the min. length of a spreaded wire
+                                          # (string, default=0)
+-drouteMinLengthForWireWidening <value>   # specify the min. length of a widened wire (float, default=1)
+-drouteMinSlackForWireOptimization <value>
+                                          # specify the min slack for a net wire optimization
+                                          # (float, default=0)
+-drouteNoTaperInLayers <value>            # Specifies the range of the layer where taper is not allowed (string, default="")
+-drouteNoTaperOnOutputPin <value>         # forbid wire tapering at output pin (ternary, default=false)
+-drouteOnGridOnly <value>                 # route on grid only (string, default=none)
+-droutePostRouteLithoRepair {true|false}
+                                          # litho hotspot repair in post route stage
+                                          # (bool, default=false)
+-droutePostRouteSpreadWire <value>        # spread wire in post route stage (string, default=auto)
+-droutePostRouteSwapVia <value>           # to enforce post route via swapping mode in detail route command. (string, default=false)
+-droutePostRouteSwapViaPriority <value>   # Set net priority for via swapping based on timing (string, default=auto)
+-droutePostRouteWidenWire <value>         # widen wire in post route stage (string, default=none)
+-droutePostRouteWidenWireRule <value>     # specify the rule used to widen wire (string, default="")
+-drouteSearchAndRepair {true|false}       # run search-and-repair step after the initial detailed routing (bool, default=true)
+-drouteSignOffEffort <value>              # specify when to give up on irresolvable violations (string, default=high)
+-drouteUseMultiCutViaEffort <value>       # specify the effort to use multi-cut via during routing (string, default=low)
+-envNumberFailLimit <value>               # set limit for number of fails (int, default=0)
+-envNumberProcessor <value>               # set the number of processors to be used in one workstation for multi-threading (int, default=1)
+-envNumberWarningLimit <value>            # set limit for number of warnings (int, default=0)
+-envThirdPartyData {true|false}           # Allow third party data as input (bool, default=false)
+-hfrouteConstraintFile <value>            # specify constraint file name (string, default="")
+-hfrouteConstraintGroups <value>          # only route specified constraint groups, legal values are {net match bus pair shield}, add "order" in
+                                          # front to control route order (string, default="")
+-hfrouteMatchReportFile <value>           # specify match report file name (string, default="")
+-hfrouteNumReserveLayers <value>          # number of layers reserved for standard cell pin access (int, default=1)
+-hfrouteRemoveFloatingShield {true|false}
+                                          # remove floating shield segments for high frequency nets
+                                          # (bool, default=false)
+-hfrouteSearchRepair <value>              # run search and repair to remove violations, legal value is one of {false true only}
+                                          # (string, default=false)
+-hfrouteShieldTrimLength <value>          # specify minimum length of shielding wire to be kept (float, default=0)
+-routeAllowPinAsFeedthrough <value>       # allow pin as feedthrough (string, default=true)
+-routeAntennaCellName <value>             # specify the antenna diode cell names for antenna fixing (string, default="")
+-routeAntennaPinLimit <value>             # ignore antenna check on a net with fanout greater than the pin limit (int, default=1000)
+-routeBottomRoutingLayer <value>          # specify the lowest metal layer Nanoroute uses for routing (int, default=0)
+-routeConcurrentMinimizeViaCountEffort <value>
+                                          # specify the effort of concurrent via minimization
+                                          # (string, default=medium)
+-routeConnectToBump {true|false}          # connect to bumps in native NanoRoute in Innovus (bool, default=false)
+-routeDesignFixClockNets {true|false}     # set clock nets routing status to fixed or routed (bool, default=false)
+-routeDesignRouteClockNetsFirst {true|false}
+                                          # route clock nets first (bool, default=true)
+-routeEnableNdrSiLimitLength <value>      # use MAR wire length as NDR PRL requirement for metal spacing check (string, default=false)
+-routeEnforceNdrOnSpecialNetWire <value>
+                                          # enforce ndr rule on all special wire segments of specified nets (string, default=false)
+-routeExtraViaEnclosure <value>           # specify an extra via enclosure to use when connecting to block pins and special net wires
+                                          # (float, default=0)
+-routeFixTopLayerAntenna {true|false}     # encourage global router not to use the top routing layer to fix antenna violations on nets without
+                                          # diode protection (bool, default=true)
+-routeHonorPowerDomain {true|false}       # honor power domain routing (bool, default=false)
+-routeIgnoreAntennaTopCellPin {true|false}
+                                          # ignore antenna check on block I/O pins
+                                          # (bool, default=true)
+-routeInsertAntennaDiode {true|false}     # insert antenna diode to fix antenna violation (bool, default=false)
+-routeInsertDiodeForClockNets {true|false}
+                                          # allow diode insertion on clock nets (bool, default=false)
+-routeRelaxedNdrSpacingToPGNets <value>   # relax the spacing requirement from NDR spacing for the layers (string, default=none)
+-routeReserveSpaceForMultiCut {true|false}
+                                          # Reserves space to insert multicut vias in postroute stage. This option has to be set before routing.
+                                          # After routing with this parameter specified, you can add double-cut vias or larger overhang vias by
+                                          # using the "routeDesign -viaOpt" command. For examples, see routeDesign. (bool, default=false)
+-routeReverseDirection <value>            # reverse routing direction in area: (lx ly ux uy [bot_lyr : top_lyr]) ... , top_lyr and bot_lyr could
+                                          # be either layer name or layer routing id (string, default="")
+-routeSelectedNetOnly {true|false}        # route selected net only (bool, default=false)
+-routeShieldCrosstieOffset <value>        # Specifies the offset in terms of number of tracks for adding crossties. The default is 0 for all
+                                          # layers. The syntax is 'layerName:numTrack1 layerName2:numTrack2... '. (string, default="")
+-routeStrictlyHonorNonDefaultRule <value>
+                                          # Strictly enforce non-default rules (string, default=false)
+-routeStripeLayerRange <value>            # specify the target layer range of stripes for tie net connection (string, default="")
+-routeTieNetToShape <value>               # specify the target special wire shapes or target instance pin for tie net connection: [auto stripe
+                                          # ring powergroundpin] (string, default=auto)
+-routeTopRoutingLayer <value>             # specify the highest metal layer Nanoroute uses for routing (int, default=0)
+-routeTrimPullBackDistanceFromBoundary <value>
+                                          # route_trim_pull_back_distance_from_boundary {<layer>:<value> ...} (string, default="")
+-routeTrunkWithClusterTargetSize <value>
+                                          # global control of trunk routing pattern for nets with TRUNK pattern attribute. 0: nets with TRUNK
+                                          # pattern will be routed as Steiner tree; 1: default, nets will be routed as traditional trunk
+                                          # pattern, i.e., each pin directly connects to SNET trunk separately; >1: define a proximate max
+                                          # cluster size (in number of pins), and nets will be routed as fishbone style, i.e., several pins in a
+                                          # column are clustered together, and then connects to SNET trunk. (int, default=1)
+-routeUnconnectedPorts {true|false}       # Route unconnected ports (bool, default=false)
+-routeWithEco {true|false}                # enable eco routing (bool, default=false)
+-routeWithLithoDriven {true|false}        # enable the litho-driven routing (bool, default=false)
+-routeWithSiDriven {true|false}           # enable si driven routing (bool, default=false)
+-routeWithTimingDriven {true|false}       # enable timing driven routing (bool, default=false)
+-routeWithViaInPin <value>                # enclose via in pin shape (string, default=false)
+-routeWithViaInPinSingleMask {true|false}
+                                          # enclose via in pin shape of a single mask
+                                          # (bool, default=false)
+-routeWithViaOnlyForMacroCellPin <value>
+                                          # enclose via in pin shape for macro cell pins
+                                          # (string, default=false)
+-routeWithViaOnlyForStandardCellPin <value>
+                                          # disable planar access to standard cell pins
+                                          # (string, default=false)
+<CMD> man timeDesign
+invalid command name "qman"
+<CMD> routeDesign -help
+*** Message Summary: 0 warning(s), 0 error(s)
+
+
+Usage: routeDesign [-help] [-hfClock] [-highFrequency] [-reclaim] [-timingFix] [[[-clockEco ] [-globalDetail | -global | -detail ] [-placementCheck | -noPlacementCheck ] [[ -trackOpt ] [-idealClock ]] [-viaOpt ] [-wireOpt ]] | [-passiveFill ]]
+
+-help              # Prints out the command usage
+-clockEco          # Do clock eco routing (bool, optional)
+-detail            # Do detail route (bool, optional)
+-global            # Do global route (bool, optional)
+-globalDetail      # Do global detail route (bool, optional)
+-hfClock           # Do high frequency clock route (bool, optional)
+-highFrequency     # Do high frequency route (bool, optional)
+-idealClock        # Use ideal clocks for optimization (bool, optional)
+-noPlacementCheck  # Do not check placement (bool, optional)
+-passiveFill       # Do passive fill (bool, optional)
+-placementCheck    # Do check placement, abort if error (bool, optional)
+-reclaim           # Use reclaim during optimization (bool, optional)
+-timingFix         # Do timing optimization (bool, optional)
+-trackOpt          # Do timing  optimization after track assignment (bool, optional)
+-viaOpt            # Do via optimization (bool, optional)
+-wireOpt           # Do wire optimization (bool, optional)
+
+
+invalid command name "fixDrc"
+<CMD> help *drc*
+Multiple matches found:
+      clearDrc
+      get_verify_drc_mode
+      loadDrc
+      metric_capture_max_drc_markers
+      route_fix_signoff_drc
+      saveDrc
+      set_verify_drc_mode
+      verify_drc
+
+<CMD> clearDrc -help
+
+Usage: clearDrc [-help]
+
+-help               # Prints out the command usage
+
+
+<CMD> man clearDrc
+<CMD> man clearDrc
+<CMD> man ecoRoute
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 436.801M, initial mem = 183.621M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:15.1, real=0:47:48, mem=436.8M) ---

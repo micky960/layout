@@ -1,0 +1,1354 @@
+[09/24 14:01:56      0s] 
+[09/24 14:01:56      0s] Cadence Innovus(TM) Implementation System.
+[09/24 14:01:56      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/24 14:01:56      0s] 
+[09/24 14:01:56      0s] Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+[09/24 14:01:56      0s] Options:	
+[09/24 14:01:56      0s] Date:		Mon Sep 24 14:01:56 2018
+[09/24 14:01:56      0s] Host:		aduae260-lap (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB)
+[09/24 14:01:56      0s] OS:		CentOS release 6.9 (Final)
+[09/24 14:01:56      0s] 
+[09/24 14:01:56      0s] License:
+[09/24 14:01:56      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[09/24 14:01:56      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/24 14:02:11     13s] @(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+[09/24 14:02:11     13s] @(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+[09/24 14:02:11     13s] @(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+[09/24 14:02:11     13s] @(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+[09/24 14:02:11     13s] @(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+[09/24 14:02:11     13s] @(#)CDS: CPE v17.12-s076
+[09/24 14:02:11     13s] @(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+[09/24 14:02:11     13s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[09/24 14:02:11     13s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[09/24 14:02:11     13s] @(#)CDS: RCDB 11.10
+[09/24 14:02:11     13s] --- Running on aduae260-lap (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB) ---
+[09/24 14:02:11     13s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_60694_aduae260-lap_as9397_cgVizG.
+
+[09/24 14:02:11     13s] Change the soft stacksize limit to 0.2%RAM (516 mbytes). Set global soft_stack_size_limit to change the value.
+[09/24 14:02:11     14s] 
+[09/24 14:02:11     14s] **INFO:  MMMC transition support version v31-84 
+[09/24 14:02:11     14s] 
+[09/24 14:02:11     14s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/24 14:02:11     14s] <CMD> suppressMessage ENCEXT-2799
+[09/24 14:02:11     14s] <CMD> getDrawView
+[09/24 14:02:11     14s] <CMD> loadWorkspace -name Physical
+[09/24 14:02:11     14s] <CMD> win
+[09/24 14:04:58     21s] <CMD> loadLefFile NangateOpenCellLibrary.lef
+[09/24 14:04:58     21s] 
+[09/24 14:04:58     21s] Loading LEF file NangateOpenCellLibrary.lef ...
+[09/24 14:04:58     21s] Set DBUPerIGU to M2 pitch 380.
+[09/24 14:04:58     21s] 
+[09/24 14:04:58     21s] viaInitial starts at Mon Sep 24 14:04:58 2018
+viaInitial ends at Mon Sep 24 14:04:58 2018
+<CMD> loadDefFile /home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def
+[09/24 14:05:42     23s] Creating netlist for top cell: b14_C ...
+[09/24 14:05:42     23s] Reading 2738 COMPONENTS ... 
+[09/24 14:05:42     23s] Done.
+[09/24 14:05:42     23s] Reading 647 PINS ... 
+[09/24 14:05:42     23s] Done.
+[09/24 14:05:42     23s] Reading 2 SPECIALNETS ... 
+[09/24 14:05:42     23s] Done.
+[09/24 14:05:42     23s] Reading 3146 NETS ... 
+[09/24 14:05:42     23s] Done.
+[09/24 14:05:43     23s] *** End DEF_netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=526.4M) ***
+[09/24 14:05:43     23s] Writing Netlist "b14_C_.6_6_postlift.def.v" ...
+[09/24 14:05:43     23s] Resetting process node dependent CCOpt properties.
+[09/24 14:05:43     23s] Free PSO.
+[09/24 14:05:43     23s] Resetting process node dependent CCOpt properties.
+[09/24 14:05:43     23s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[09/24 14:05:43     23s] Set DBUPerIGU to 1000.
+[09/24 14:05:43     23s] Set net toggle Scale Factor to 1.00
+[09/24 14:05:43     23s] Set Shrink Factor to 1.00000
+[09/24 14:05:43     23s] Set net toggle Scale Factor to 1.00
+[09/24 14:05:43     23s] Set Shrink Factor to 1.00000
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] *** Memory Usage v#1 (Current mem = 522.723M, initial mem = 191.621M) ***
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] Info (SM2C): Status of key globals:
+[09/24 14:05:43     23s] 	 MMMC-by-default flow     : 1
+[09/24 14:05:43     23s] 	 Default MMMC objs envvar : 0
+[09/24 14:05:43     23s] 	 Data portability         : 0
+[09/24 14:05:43     23s] 	 MMMC PV Emulation        : 0
+[09/24 14:05:43     23s] 	 MMMC debug               : 0
+[09/24 14:05:43     23s] 	 Init_Design flow         : 1
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] 	 CTE SM2C global          : false
+[09/24 14:05:43     23s] 	 Reporting view filter    : false
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] Loading LEF file NangateOpenCellLibrary.lef ...
+[09/24 14:05:43     23s] Set DBUPerIGU to M2 pitch 380.
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] viaInitial starts at Mon Sep 24 14:05:43 2018
+viaInitial ends at Mon Sep 24 14:05:43 2018
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.40min, fe_mem=525.8M) ***
+[09/24 14:05:43     23s] *** Begin netlist parsing (mem=525.8M) ***
+[09/24 14:05:43     23s] Created 0 new cells from 0 timing libraries.
+[09/24 14:05:43     23s] Reading netlist ...
+[09/24 14:05:43     23s] Backslashed names will retain backslash and a trailing blank character.
+[09/24 14:05:43     23s] Reading verilog netlist 'b14_C_.6_6_postlift.def.v'
+[09/24 14:05:43     23s] 
+[09/24 14:05:43     23s] *** Memory Usage v#1 (Current mem = 525.824M, initial mem = 191.621M) ***
+[09/24 14:05:43     23s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=525.8M) ***
+[09/24 14:05:43     23s] Top level cell is b14_C.
+[09/24 14:05:44     23s] LoadLibsFirst: dbBindLib
+[09/24 14:05:44     23s] Hooked 0 DB cells to tlib cells.
+[09/24 14:05:44     23s] Starting recursive module instantiation check.
+[09/24 14:05:44     23s] No recursion found.
+[09/24 14:05:44     23s] Building hierarchical netlist for Cell b14_C ...
+[09/24 14:05:44     23s] *** Netlist is unique.
+[09/24 14:05:44     23s] ** info: there are 135 modules.
+[09/24 14:05:44     23s] ** info: there are 2738 stdCell insts.
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] *** Memory Usage v#1 (Current mem = 559.586M, initial mem = 191.621M) ***
+[09/24 14:05:44     23s] *info: set bottom ioPad orient R0
+[09/24 14:05:44     23s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] Set Using Default Delay Limit as 1000.
+[09/24 14:05:44     23s] Set Default Net Delay as 1000 ps.
+[09/24 14:05:44     23s] Set Default Net Load as 0.5 pF. 
+[09/24 14:05:44     23s] Set Default Input Pin Transition as 0.1 ps.
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] Info (SM2C) :  No usable timing libraries were defined in .conf - physical only mode
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] !INFO (MMMC):  The design is in physical only mode .
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] 
+[09/24 14:05:44     23s] Reading DEF file '/home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def', current time is Mon Sep 24 14:05:44 2018 ...
+[09/24 14:05:44     23s] --- DIVIDERCHAR '/'
+[09/24 14:05:44     23s] --- UnitsPerDBU = 1.0000
+[09/24 14:05:44     23s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[09/24 14:05:44     23s] --- DIEAREA (0 0) (149340 147840)
+[09/24 14:05:44     24s] Extracting standard cell pins and blockage ...... 
+[09/24 14:05:44     24s] Pin and blockage extraction finished
+[09/24 14:05:44     24s] Extracting macro/IO cell pins and blockage ...... 
+[09/24 14:05:44     24s] Pin and blockage extraction finished
+[09/24 14:05:44     24s] defIn read 10000 lines...
+[09/24 14:05:44     24s] defIn read 20000 lines...
+[09/24 14:05:44     24s] defIn read 30000 lines...
+[09/24 14:05:44     24s] defIn read 40000 lines...
+[09/24 14:05:44     24s] defIn read 50000 lines...
+[09/24 14:05:44     24s] DEF file '/home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def' is parsed, current time is Mon Sep 24 14:05:44 2018.
+[09/24 14:05:44     24s] Updating the floorplan ...
+[09/24 14:07:54     29s] <CMD> selectInst U2778
+[09/24 14:07:54     29s] Set RLRP Inst: U2778
+[09/24 14:08:00     29s] <CMD> zoomSelected
+[09/24 14:08:00     29s] Set RLRP Inst: U2778
+[09/24 14:08:05     30s] <CMD> win
+[09/24 14:08:08     30s] <CMD> fit
+[09/24 14:08:08     30s] Set RLRP Inst: U2778
+[09/24 14:08:14     30s] <CMD> setDrawView place
+[09/24 14:08:14     30s] Set RLRP Inst: U2778
+[09/24 14:08:15     30s] <CMD> setDrawView place
+[09/24 14:08:15     30s] Set RLRP Inst: U2778
+[09/24 14:08:16     30s] <CMD> setDrawView fplan
+[09/24 14:08:16     30s] Set RLRP Inst: U2778
+[09/24 14:08:17     30s] <CMD> setDrawView ameba
+[09/24 14:08:17     30s] Set RLRP Inst: U2778
+[09/24 14:08:18     31s] <CMD> setDrawView fplan
+[09/24 14:08:18     31s] Set RLRP Inst: U2778
+[09/24 14:08:22     31s] <CMD> selectInst U2778
+[09/24 14:08:22     31s] Set RLRP Inst: U2778
+[09/24 14:08:41     32s] <CMD> zoomSelected
+[09/24 14:08:41     32s] Set RLRP Inst: U2778
+[09/24 14:08:43     32s] <CMD> win
+[09/24 14:08:45     32s] Set RLRP Inst: U2778
+[09/24 14:08:47     32s] Set RLRP Inst: U2778
+[09/24 14:08:47     32s] Set RLRP Inst: U2778
+[09/24 14:08:47     32s] Set RLRP Inst: U2778
+[09/24 14:08:47     32s] Set RLRP Inst: U2778
+[09/24 14:08:48     32s] Set RLRP Inst: U2778
+[09/24 14:08:48     32s] Set RLRP Inst: U2778
+[09/24 14:08:49     32s] Set RLRP Inst: U2778
+[09/24 14:08:50     32s] Set RLRP Inst: U2778
+[09/24 14:08:51     32s] Set RLRP Inst: U2778
+[09/24 14:08:51     32s] Set RLRP Inst: U2778
+[09/24 14:08:52     32s] <CMD> fit
+[09/24 14:08:52     32s] Set RLRP Inst: U2778
+[09/24 14:08:54     32s] <CMD> deselectAll
+[09/24 14:08:56     33s] <CMD> selectInst u_key_logic_0_42_buf_inst
+[09/24 14:08:56     33s] Set RLRP Inst: u_key_logic_0_42_buf_inst
+[09/24 14:08:57     33s] <CMD> deselectAll
+[09/24 14:08:57     33s] <CMD> selectInst u_key_logic_1_43_buf_inst
+[09/24 14:08:57     33s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:05     33s] <CMD> selectInst U2259
+[09/24 14:09:05     33s] Set RLRP Inst: U2259
+[09/24 14:09:09     33s] <CMD> zoomSelected
+[09/24 14:09:09     33s] Set RLRP Inst: U2259
+[09/24 14:09:11     33s] <CMD> win
+[09/24 14:09:16     34s] <CMD> deselectAll
+[09/24 14:09:16     34s] <CMD> selectInst u_key_logic_1_43_buf_inst
+[09/24 14:09:16     34s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:25     34s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:38     35s] <CMD> panPage 1 0
+[09/24 14:09:38     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:39     35s] <CMD> panPage -1 0
+[09/24 14:09:39     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:40     35s] <CMD> panPage -1 0
+[09/24 14:09:40     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:40     35s] <CMD> panPage 0 -1
+[09/24 14:09:40     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:40     35s] <CMD> panPage 0 -1
+[09/24 14:09:40     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:41     35s] <CMD> panPage 0 1
+[09/24 14:09:41     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:43     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:44     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:44     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:44     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:45     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:45     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:45     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:45     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:46     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:48     35s] <CMD> setDrawView place
+[09/24 14:09:48     35s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:53     36s] <CMD> setLayerPreference net -isVisible 0
+[09/24 14:09:53     36s] <CMD> setLayerPreference power -isVisible 0
+[09/24 14:09:53     36s] <CMD> setLayerPreference pgPower -isVisible 0
+[09/24 14:09:53     36s] <CMD> setLayerPreference pgGround -isVisible 0
+[09/24 14:09:53     36s] <CMD> setLayerPreference clock -isVisible 0
+[09/24 14:09:53     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:56     36s] <CMD> panPage 0 -1
+[09/24 14:09:56     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:57     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:57     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:09:58     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:00     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:00     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:03     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:07     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:07     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:07     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:08     36s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:09     37s] <CMD> panPage 0 1
+[09/24 14:10:09     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:10     37s] <CMD> panPage 0 1
+[09/24 14:10:10     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:10     37s] <CMD> panPage 0 1
+[09/24 14:10:10     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:11     37s] <CMD> panPage 0 1
+[09/24 14:10:11     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:11     37s] <CMD> panPage 0 1
+[09/24 14:10:11     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:11     37s] <CMD> panPage 0 1
+[09/24 14:10:11     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:12     37s] <CMD> panPage 0 1
+[09/24 14:10:12     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:12     37s] <CMD> panPage 0 1
+[09/24 14:10:12     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:12     37s] <CMD> panPage 0 1
+[09/24 14:10:12     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:13     37s] <CMD> panPage 0 1
+[09/24 14:10:13     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:13     37s] <CMD> panPage 0 1
+[09/24 14:10:13     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:13     37s] <CMD> panPage 0 1
+[09/24 14:10:13     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:18     37s] <CMD> setDrawView place
+[09/24 14:10:18     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:19     37s] <CMD> setDrawView fplan
+[09/24 14:10:19     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:21     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:21     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:21     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:22     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:22     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:23     37s] <CMD> panPage 0 -1
+[09/24 14:10:23     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:23     37s] <CMD> panPage 0 -1
+[09/24 14:10:23     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:24     37s] <CMD> panPage 0 -1
+[09/24 14:10:24     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:25     37s] <CMD> panPage 1 0
+[09/24 14:10:25     37s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:25     37s] <CMD> panPage 0 1
+[09/24 14:10:25     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:26     38s] <CMD> panPage 0 -1
+[09/24 14:10:26     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:27     38s] <CMD> panPage -1 0
+[09/24 14:10:27     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:29     38s] <CMD> panPage 0 1
+[09/24 14:10:29     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:29     38s] <CMD> panPage 0 1
+[09/24 14:10:29     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:31     38s] <CMD> panPage 0 -1
+[09/24 14:10:31     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:31     38s] <CMD> panPage 0 -1
+[09/24 14:10:31     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:31     38s] <CMD> panPage 0 1
+[09/24 14:10:31     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:32     38s] <CMD> panPage 0 1
+[09/24 14:10:32     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:10:34     38s] <CMD> panPage 0 1
+[09/24 14:10:34     38s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:17     45s] <CMD> setLayerPreference net -isVisible 1
+[09/24 14:13:17     45s] <CMD> setLayerPreference power -isVisible 1
+[09/24 14:13:17     45s] <CMD> setLayerPreference pgPower -isVisible 1
+[09/24 14:13:17     45s] <CMD> setLayerPreference pgGround -isVisible 1
+[09/24 14:13:17     45s] <CMD> setLayerPreference clock -isVisible 1
+[09/24 14:13:17     45s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:26     46s] <CMD> setLayerPreference allM0 -isVisible 0
+[09/24 14:13:26     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:27     46s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/24 14:13:27     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:30     46s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/24 14:13:30     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:31     46s] <CMD> setLayerPreference allM2 -isVisible 0
+[09/24 14:13:31     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:32     46s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/24 14:13:32     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:33     46s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/24 14:13:33     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:34     46s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/24 14:13:34     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:34     46s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/24 14:13:34     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:36     46s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/24 14:13:36     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:36     46s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/24 14:13:36     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:37     46s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/24 14:13:37     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:38     46s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 14:13:38     46s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:39     47s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:13:39     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:40     47s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 14:13:40     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:41     47s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 14:13:41     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:42     47s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 14:13:42     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:43     47s] <CMD> setLayerPreference allM9Cont -isVisible 0
+[09/24 14:13:43     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:43     47s] <CMD> setLayerPreference allM9 -isVisible 0
+[09/24 14:13:43     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:44     47s] <CMD> setLayerPreference allM10Cont -isVisible 0
+[09/24 14:13:44     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:45     47s] <CMD> setLayerPreference allM10 -isVisible 0
+[09/24 14:13:45     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:47     47s] <CMD> setDrawView place
+[09/24 14:13:47     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:49     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:49     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:50     47s] <CMD> panPage 1 0
+[09/24 14:13:50     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:51     47s] <CMD> panPage -1 0
+[09/24 14:13:51     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:52     47s] <CMD> panPage 1 0
+[09/24 14:13:52     47s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:13:59     48s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 14:13:59     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:05     48s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 14:14:05     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:06     48s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 14:14:06     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:11     48s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:14:11     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:12     48s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 14:14:12     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:17     48s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:14:17     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:18     48s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 14:14:18     48s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:19     49s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:14:19     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:21     49s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 14:14:21     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:24     49s] <CMD> panPage 0 -1
+[09/24 14:14:24     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:25     49s] <CMD> panPage 0 -1
+[09/24 14:14:25     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:25     49s] <CMD> panPage 0 -1
+[09/24 14:14:25     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:25     49s] <CMD> panPage 0 -1
+[09/24 14:14:26     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:26     49s] <CMD> panPage 0 -1
+[09/24 14:14:26     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:26     49s] <CMD> panPage 0 -1
+[09/24 14:14:26     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:27     49s] <CMD> panPage -1 0
+[09/24 14:14:27     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:27     49s] <CMD> panPage 0 1
+[09/24 14:14:27     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:37     49s] <CMD> panPage 0 1
+[09/24 14:14:37     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:37     49s] <CMD> panPage 0 -1
+[09/24 14:14:37     49s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:42     50s] <CMD> panPage 0 1
+[09/24 14:14:42     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:43     50s] <CMD> panPage 0 1
+[09/24 14:14:43     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:44     50s] <CMD> panPage 1 0
+[09/24 14:14:44     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:45     50s] <CMD> panPage 0 1
+[09/24 14:14:45     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:45     50s] <CMD> panPage 0 1
+[09/24 14:14:45     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:14:46     50s] <CMD> panPage 0 1
+[09/24 14:14:46     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:01     50s] <CMD> panPage 0 -1
+[09/24 14:15:01     50s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:01     51s] <CMD> panPage 0 -1
+[09/24 14:15:01     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:02     51s] <CMD> panPage 0 -1
+[09/24 14:15:02     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:02     51s] <CMD> panPage 0 -1
+[09/24 14:15:02     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:03     51s] <CMD> panPage 0 -1
+[09/24 14:15:03     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:03     51s] <CMD> panPage 0 -1
+[09/24 14:15:03     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:03     51s] <CMD> panPage 0 1
+[09/24 14:15:03     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:11     51s] <CMD> panPage 0 1
+[09/24 14:15:11     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:11     51s] <CMD> panPage 0 1
+[09/24 14:15:11     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:12     51s] <CMD> panPage 0 1
+[09/24 14:15:12     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:12     51s] <CMD> panPage 0 1
+[09/24 14:15:12     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:12     51s] <CMD> panPage 0 1
+[09/24 14:15:12     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:13     51s] <CMD> panPage 0 1
+[09/24 14:15:13     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:13     51s] <CMD> panPage 0 1
+[09/24 14:15:13     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:14     51s] <CMD> panPage 0 -1
+[09/24 14:15:14     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:14     51s] <CMD> panPage 0 -1
+[09/24 14:15:14     51s] Set RLRP Inst: u_key_logic_1_43_buf_inst
+[09/24 14:15:36     52s] <CMD> deselectAll
+[09/24 14:15:36     52s] <CMD> selectWire 48.3150 35.0100 48.7150 35.8300 7 eco_buf_key_logic_1_43
+[09/24 14:15:53     53s] <CMD> panPage 0 -1
+[09/24 14:15:54     53s] <CMD> panPage 0 -1
+[09/24 14:15:54     53s] <CMD> panPage 0 -1
+[09/24 14:15:55     53s] <CMD> panPage 0 -1
+[09/24 14:15:55     53s] <CMD> panPage 0 -1
+[09/24 14:15:55     53s] <CMD> panPage 0 -1
+[09/24 14:15:56     53s] <CMD> panPage 0 1
+[09/24 14:16:27     54s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 14:16:29     54s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 14:16:30     55s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 14:16:31     55s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 14:16:31     55s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 14:16:34     55s] <CMD> panPage 0 1
+[09/24 14:16:34     55s] <CMD> panPage 0 1
+[09/24 14:16:34     55s] <CMD> panPage 0 1
+[09/24 14:16:35     55s] <CMD> panPage 0 1
+[09/24 14:16:36     55s] <CMD> panPage 0 1
+[09/24 14:16:42     55s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 14:17:00     56s] <CMD> selectInst U2258
+[09/24 14:17:00     56s] Set RLRP Inst: U2258
+[09/24 14:17:02     56s] <CMD> zoomSelected
+[09/24 14:17:02     56s] Set RLRP Inst: U2258
+[09/24 14:17:03     56s] <CMD> win
+[09/24 14:17:05     56s] Set RLRP Inst: U2258
+[09/24 14:17:08     57s] <CMD> panPage -1 0
+[09/24 14:17:08     57s] Set RLRP Inst: U2258
+[09/24 14:17:09     57s] <CMD> panPage 0 -1
+[09/24 14:17:09     57s] Set RLRP Inst: U2258
+[09/24 14:17:09     57s] <CMD> panPage 0 -1
+[09/24 14:17:09     57s] Set RLRP Inst: U2258
+[09/24 14:17:10     57s] <CMD> panPage 0 1
+[09/24 14:17:10     57s] Set RLRP Inst: U2258
+[09/24 14:17:10     57s] <CMD> panPage 1 0
+[09/24 14:17:10     57s] Set RLRP Inst: U2258
+[09/24 14:17:12     57s] Set RLRP Inst: U2258
+[09/24 14:17:12     57s] Set RLRP Inst: U2258
+[09/24 14:17:12     57s] Set RLRP Inst: U2258
+[09/24 14:17:12     57s] Set RLRP Inst: U2258
+[09/24 14:17:14     57s] Set RLRP Inst: U2258
+[09/24 14:17:14     57s] <CMD> deselectAll
+[09/24 14:17:14     57s] <CMD> selectInst U2258
+[09/24 14:17:14     57s] Set RLRP Inst: U2258
+[09/24 14:17:16     57s] Set RLRP Inst: U2258
+[09/24 14:17:40     58s] <CMD> deselectAll
+[09/24 14:17:40     58s] <CMD> selectInst U2258
+[09/24 14:17:40     58s] Set RLRP Inst: U2258
+[09/24 14:17:41     58s] <CMD> deselectAll
+[09/24 14:17:41     58s] <CMD> selectInst U2258
+[09/24 14:17:41     58s] Set RLRP Inst: U2258
+[09/24 14:17:42     58s] Set RLRP Inst: U2258
+[09/24 14:17:47     59s] <CMD> panPage -1 0
+[09/24 14:17:47     59s] Set RLRP Inst: U2258
+[09/24 14:17:48     59s] <CMD> panPage 0 -1
+[09/24 14:17:48     59s] Set RLRP Inst: U2258
+[09/24 14:17:49     59s] <CMD> panPage -1 0
+[09/24 14:17:49     59s] Set RLRP Inst: U2258
+[09/24 14:17:49     59s] <CMD> panPage -1 0
+[09/24 14:17:49     59s] Set RLRP Inst: U2258
+[09/24 14:17:49     59s] <CMD> panPage -1 0
+[09/24 14:17:49     59s] Set RLRP Inst: U2258
+[09/24 14:17:50     59s] <CMD> panPage 0 -1
+[09/24 14:17:50     59s] Set RLRP Inst: U2258
+[09/24 14:17:50     59s] <CMD> panPage -1 0
+[09/24 14:17:50     59s] Set RLRP Inst: U2258
+[09/24 14:17:50     59s] <CMD> panPage -1 0
+[09/24 14:17:50     59s] Set RLRP Inst: U2258
+[09/24 14:17:50     59s] <CMD> panPage -1 0
+[09/24 14:17:50     59s] Set RLRP Inst: U2258
+[09/24 14:17:51     59s] <CMD> panPage 0 -1
+[09/24 14:17:51     59s] Set RLRP Inst: U2258
+[09/24 14:17:51     59s] <CMD> panPage 0 -1
+[09/24 14:17:51     59s] Set RLRP Inst: U2258
+[09/24 14:17:53     59s] <CMD> panPage 1 0
+[09/24 14:17:53     59s] Set RLRP Inst: U2258
+[09/24 14:17:53     59s] <CMD> panPage 1 0
+[09/24 14:17:53     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:17:54     59s] <CMD> panPage 1 0
+[09/24 14:17:54     59s] Set RLRP Inst: U2258
+[09/24 14:20:27     66s] <CMD> selectInst U2259
+[09/24 14:20:27     66s] Set RLRP Inst: U2259
+[09/24 14:20:29     66s] <CMD> win
+[09/24 14:20:32     66s] <CMD> fit
+[09/24 14:20:32     66s] Set RLRP Inst: U2259
+[09/24 14:20:33     67s] Set RLRP Inst: U2259
+[09/24 14:20:34     67s] Set RLRP Inst: U2259
+[09/24 14:20:35     67s] Set RLRP Inst: U2259
+[09/24 14:20:35     67s] Set RLRP Inst: U2259
+[09/24 14:20:36     67s] Set RLRP Inst: U2259
+[09/24 14:21:58     70s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 14:21:58     70s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:01     71s] <CMD> zoomSelected
+[09/24 14:22:01     71s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:03     71s] <CMD> win
+[09/24 14:22:07     71s] <CMD> fit
+[09/24 14:22:07     71s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:15     71s] <CMD> deselectAll
+[09/24 14:22:18     71s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 14:22:18     71s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:21     72s] <CMD> zoomSelected
+[09/24 14:22:21     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:22     72s] <CMD> win
+[09/24 14:22:26     72s] <CMD> fit
+[09/24 14:22:26     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:28     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:28     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:28     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:29     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:29     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:29     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:29     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:30     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:30     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:31     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:32     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:32     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:33     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:33     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:34     72s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:36     73s] <CMD> setDrawView place
+[09/24 14:22:36     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:37     73s] <CMD> setDrawView fplan
+[09/24 14:22:37     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:39     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:40     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:40     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:41     73s] <CMD> deselectAll
+[09/24 14:22:41     73s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 14:22:41     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:42     73s] <CMD> deselectAll
+[09/24 14:22:42     73s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 14:22:42     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:43     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:43     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:44     73s] <CMD> panPage 0 1
+[09/24 14:22:44     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:46     73s] <CMD> panPage 0 1
+[09/24 14:22:46     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:46     73s] <CMD> panPage 0 -1
+[09/24 14:22:46     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:46     73s] <CMD> panPage 0 -1
+[09/24 14:22:46     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:48     73s] <CMD> setDrawView place
+[09/24 14:22:48     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:49     73s] <CMD> setDrawView place
+[09/24 14:22:49     73s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:51     73s] <CMD> setDrawView fplan
+[09/24 14:22:51     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:51     74s] <CMD> setDrawView fplan
+[09/24 14:22:51     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:52     74s] <CMD> setDrawView place
+[09/24 14:22:52     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:54     74s] <CMD> panPage 0 1
+[09/24 14:22:54     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:54     74s] <CMD> panPage 0 1
+[09/24 14:22:54     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:54     74s] <CMD> panPage 0 -1
+[09/24 14:22:54     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:54     74s] <CMD> panPage 0 -1
+[09/24 14:22:54     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:55     74s] <CMD> panPage 0 -1
+[09/24 14:22:55     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:55     74s] <CMD> panPage 0 1
+[09/24 14:22:55     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:22:58     74s] <CMD> setDrawView fplan
+[09/24 14:22:58     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:01     74s] <CMD> setDrawView place
+[09/24 14:23:01     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:03     74s] <CMD> deselectAll
+[09/24 14:23:03     74s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 14:23:03     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:04     74s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:06     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:09     75s] <CMD> setDrawView fplan
+[09/24 14:23:09     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:10     75s] <CMD> panPage 0 -1
+[09/24 14:23:10     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:11     75s] <CMD> panPage 0 1
+[09/24 14:23:11     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:11     75s] <CMD> panPage 0 1
+[09/24 14:23:11     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:13     75s] <CMD> panPage -1 0
+[09/24 14:23:13     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:13     75s] <CMD> panPage 1 0
+[09/24 14:23:13     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:14     75s] <CMD> panPage 0 -1
+[09/24 14:23:14     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:14     75s] <CMD> panPage 0 1
+[09/24 14:23:14     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:21     75s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:23:21     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:22     75s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 14:23:22     75s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:22     76s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 14:23:22     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:24     76s] <CMD> setDrawView place
+[09/24 14:23:24     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:27     76s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 14:23:27     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:28     76s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 14:23:28     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:29     76s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 14:23:29     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:30     76s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 14:23:30     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:31     76s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 14:23:31     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:35     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:35     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:36     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:23:37     76s] <CMD> panPage 0 -1
+[09/24 14:23:37     76s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:24:15     78s] <CMD> panPage 0 1
+[09/24 14:24:15     78s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:24:15     78s] <CMD> panPage 0 1
+[09/24 14:24:15     78s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:24:16     78s] <CMD> panPage 0 1
+[09/24 14:24:16     78s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 14:24:16     78s] <CMD> panPage 0 -1
+[09/24 14:24:16     78s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:09    218s] <CMD> setDrawView place
+[09/24 15:17:09    218s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:11    218s] <CMD> setDrawView fplan
+[09/24 15:17:11    218s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:14    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:14    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:14    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:15    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:15    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:20    219s] <CMD> setDrawView place
+[09/24 15:17:21    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:24    219s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:17:24    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:26    219s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:17:26    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:27    219s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:17:27    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:27    219s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:17:27    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:28    219s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:17:28    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:30    219s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:17:30    219s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:33    220s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:17:33    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:34    220s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:17:34    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:36    220s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:17:36    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:38    220s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:17:38    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:38    220s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:17:38    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:40    220s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:17:40    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:41    220s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:17:41    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:45    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:45    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:46    220s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:47    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:17:48    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:02    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:02    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:03    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:03    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:04    221s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:13    222s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:18:13    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:15    222s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:18:15    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:16    222s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:18:16    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:21    222s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:18:21    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:25    222s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:18:25    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:27    222s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:18:27    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:28    222s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:18:28    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:29    222s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:18:29    222s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:29    223s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:18:29    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:31    223s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:18:31    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:31    223s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:18:31    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:33    223s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:18:33    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:34    223s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:18:34    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:37    223s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:18:37    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:38    223s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:18:38    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:43    223s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:18:43    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:44    223s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:18:44    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:18:47    223s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:18:47    223s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:24    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:24    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:24    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:24    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:25    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:26    250s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:28:41    251s] <CMD> setDrawView fplan
+[09/24 15:28:41    251s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:03    252s] <CMD> setDrawView place
+[09/24 15:29:04    252s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:05    252s] <CMD> setDrawView fplan
+[09/24 15:29:05    252s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:19    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:19    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:19    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:20    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:20    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:21    253s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:24    254s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:29:24    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:26    254s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:29:26    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:27    254s] <CMD> setDrawView place
+[09/24 15:29:27    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:30    254s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:29:30    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:33    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:33    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:33    254s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:29:43    255s] <CMD> deselectAll
+[09/24 15:29:43    255s] <CMD> selectWire 39.4850 35.4200 39.6250 45.0800 6 FE_OFN25_n3821
+[09/24 15:29:52    255s] <CMD> panPage 0 1
+[09/24 15:29:53    255s] <CMD> panPage 0 1
+[09/24 15:29:53    255s] <CMD> panPage 0 1
+[09/24 15:29:54    255s] <CMD> panPage 0 -1
+[09/24 15:29:59    256s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:30:13    256s] <CMD> deselectAll
+[09/24 15:30:15    256s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 15:30:15    256s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:17    256s] <CMD> zoomSelected
+[09/24 15:30:17    256s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:18    256s] <CMD> win
+[09/24 15:30:21    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:22    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:22    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:22    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:23    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:23    257s] <CMD> deselectAll
+[09/24 15:30:23    257s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 15:30:23    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:24    257s] <CMD> deselectAll
+[09/24 15:30:24    257s] <CMD> selectInst u_key_logic_0_10_buf_inst
+[09/24 15:30:24    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:24    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:29    257s] <CMD> panPage 0 1
+[09/24 15:30:29    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:30    257s] <CMD> panPage 0 1
+[09/24 15:30:30    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:30    257s] <CMD> panPage -1 0
+[09/24 15:30:30    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:30    257s] <CMD> panPage 0 -1
+[09/24 15:30:30    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:35    257s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:30:35    257s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:37    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:37    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:39    258s] <CMD> panPage 0 1
+[09/24 15:30:39    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:42    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:42    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:50    258s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:30:50    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:52    258s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:30:52    258s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:56    259s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:30:56    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:57    259s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:30:57    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:30:59    259s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:30:59    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:01    259s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:31:01    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:02    259s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:31:02    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:03    259s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:31:03    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:09    259s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:31:09    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:10    259s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:31:10    259s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:20    260s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:31:20    260s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:22    260s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:31:22    260s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:36    261s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:31:36    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:43    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:43    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:43    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:44    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:44    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:44    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:46    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:49    261s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:31:49    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:52    261s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:31:52    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:54    261s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:31:54    261s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:58    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:58    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:58    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:59    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:31:59    262s] <CMD> panPage 0 1
+[09/24 15:31:59    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:08    262s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:32:08    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:11    262s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/24 15:32:11    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:12    262s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/24 15:32:12    262s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:14    263s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/24 15:32:14    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:16    263s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/24 15:32:16    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:18    263s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/24 15:32:18    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:21    263s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:32:21    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:23    263s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:32:23    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:26    263s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:32:26    263s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:36    264s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/24 15:32:36    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:37    264s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/24 15:32:37    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:37    264s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/24 15:32:37    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:38    264s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/24 15:32:38    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:39    264s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/24 15:32:39    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:39    264s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:32:39    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:40    264s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:32:40    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:41    264s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:32:41    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:43    264s] <CMD> setLayerPreference allM1 -isVisible 1
+[09/24 15:32:43    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:44    264s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/24 15:32:44    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:46    264s] <CMD> setLayerPreference allM2 -isVisible 1
+[09/24 15:32:46    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:47    264s] <CMD> setLayerPreference allM2 -isVisible 0
+[09/24 15:32:47    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:49    264s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/24 15:32:49    264s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:51    265s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/24 15:32:51    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:52    265s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/24 15:32:52    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:53    265s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/24 15:32:53    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:55    265s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/24 15:32:55    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:56    265s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/24 15:32:56    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:57    265s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:32:57    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:32:59    265s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:32:59    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:00    265s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:33:00    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:02    265s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:33:02    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:04    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:04    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:04    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:04    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:05    265s] <CMD> panPage 0 -1
+[09/24 15:33:05    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:05    265s] <CMD> panPage 0 -1
+[09/24 15:33:05    265s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:07    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:07    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:07    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:07    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:08    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:23    266s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:33:23    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:23    266s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:33:23    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:25    266s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:33:25    266s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:35    267s] <CMD> fit
+[09/24 15:33:35    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:39    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:39    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:39    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:40    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:40    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:40    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:41    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:42    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:43    267s] <CMD> panPage 0 -1
+[09/24 15:33:43    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:44    267s] <CMD> panPage 1 0
+[09/24 15:33:44    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:44    267s] <CMD> panPage 0 -1
+[09/24 15:33:44    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:44    267s] <CMD> panPage 0 -1
+[09/24 15:33:44    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:45    267s] <CMD> panPage 0 -1
+[09/24 15:33:45    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:45    267s] <CMD> panPage 0 -1
+[09/24 15:33:45    267s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:45    268s] <CMD> panPage 0 -1
+[09/24 15:33:45    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:47    268s] <CMD> panPage -1 0
+[09/24 15:33:47    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:50    268s] <CMD> panPage 1 0
+[09/24 15:33:50    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:51    268s] <CMD> panPage 0 1
+[09/24 15:33:51    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:52    268s] <CMD> panPage 0 1
+[09/24 15:33:52    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:52    268s] <CMD> panPage 0 1
+[09/24 15:33:52    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:52    268s] <CMD> panPage 0 1
+[09/24 15:33:52    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:53    268s] <CMD> panPage 0 1
+[09/24 15:33:53    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:53    268s] <CMD> panPage -1 0
+[09/24 15:33:53    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:54    268s] <CMD> panPage 0 1
+[09/24 15:33:54    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:54    268s] <CMD> panPage 0 1
+[09/24 15:33:54    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:33:55    268s] <CMD> panPage 0 -1
+[09/24 15:33:55    268s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:20    269s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:34:20    269s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:24    269s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:34:24    269s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:42    270s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:34:42    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:42    270s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:34:42    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:43    270s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:34:43    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:46    270s] <CMD> panPage 0 -1
+[09/24 15:34:46    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:47    270s] <CMD> panPage 1 0
+[09/24 15:34:47    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:48    270s] <CMD> panPage 0 -1
+[09/24 15:34:48    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:49    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:49    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:49    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:49    270s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:50    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:34:51    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:03    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:03    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:03    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:03    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:04    271s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:08    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:08    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:08    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:09    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:10    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:10    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:10    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:11    272s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:34    273s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:35:34    273s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:35    273s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:35:35    273s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:37    273s] <CMD> setDrawView fplan
+[09/24 15:35:37    273s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:35:38    273s] Set RLRP Inst: u_key_logic_0_10_buf_inst
+[09/24 15:53:08    321s] <CMD> deselectAll
+[09/24 15:53:17    322s] <CMD> selectInst u_key_logic_0_4_buf_inst
+[09/24 15:53:17    322s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:20    322s] <CMD> zoomSelected
+[09/24 15:53:20    322s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:21    322s] <CMD> win
+[09/24 15:53:24    322s] <CMD> deselectAll
+[09/24 15:53:24    322s] <CMD> selectInst u_key_logic_0_4_buf_inst
+[09/24 15:53:24    322s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:24    322s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:28    322s] <CMD> fit
+[09/24 15:53:28    322s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:32    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:32    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:32    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:33    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:33    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:34    323s] <CMD> panPage 1 0
+[09/24 15:53:34    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:35    323s] <CMD> panPage -1 0
+[09/24 15:53:35    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:38    323s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:53:38    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:41    323s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:53:41    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:41    323s] <CMD> setDrawView place
+[09/24 15:53:41    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:45    323s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:53:45    323s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:47    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:47    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:54    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:54    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:55    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:57    324s] <CMD> panPage 0 1
+[09/24 15:53:57    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:58    324s] <CMD> panPage 1 0
+[09/24 15:53:58    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:58    324s] <CMD> panPage 1 0
+[09/24 15:53:58    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:58    324s] <CMD> panPage 1 0
+[09/24 15:53:58    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:59    324s] <CMD> panPage -1 0
+[09/24 15:53:59    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:53:59    324s] <CMD> panPage -1 0
+[09/24 15:53:59    324s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:11    325s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:54:11    325s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:13    325s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:54:13    325s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:19    325s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:54:19    325s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:21    325s] <CMD> setLayerPreference allM9 -isVisible 1
+[09/24 15:54:21    325s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:24    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:24    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:24    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:24    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:25    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:25    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:26    326s] <CMD> panPage 1 0
+[09/24 15:54:26    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:26    326s] <CMD> panPage 1 0
+[09/24 15:54:26    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:27    326s] <CMD> panPage 1 0
+[09/24 15:54:27    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:34    326s] <CMD> setLayerPreference allM10 -isVisible 1
+[09/24 15:54:34    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:35    326s] <CMD> setLayerPreference allM10 -isVisible 0
+[09/24 15:54:35    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:36    326s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:54:36    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:37    326s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:54:37    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:39    326s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:54:39    326s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:44    327s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:54:44    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:46    327s] <CMD> panPage -1 0
+[09/24 15:54:46    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:47    327s] <CMD> panPage -1 0
+[09/24 15:54:47    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:47    327s] <CMD> panPage -1 0
+[09/24 15:54:47    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:48    327s] <CMD> panPage 0 -1
+[09/24 15:54:48    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:48    327s] <CMD> panPage -1 0
+[09/24 15:54:48    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:49    327s] <CMD> panPage 1 0
+[09/24 15:54:49    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:51    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:52    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:54:54    327s] <CMD> panPage 1 0
+[09/24 15:54:54    327s] Set RLRP Inst: u_key_logic_0_4_buf_inst
+[09/24 15:55:22    328s] <CMD> deselectAll
+[09/24 15:55:22    328s] <CMD> selectWire 34.8750 35.0100 38.0750 35.4100 7 eco_buf_key_logic_0_4
+[09/24 15:55:33    329s] <CMD> get_visible_nets
+[09/24 15:55:56    330s] <CMD> reportSelect
+[09/24 15:55:56    330s] 
+[09/24 15:55:56    330s] 
+[09/24 15:55:56    330s]              Object Type : Regular Wire
+[09/24 15:55:56    330s]                 Net Name : eco_buf_key_logic_0_4
+[09/24 15:55:56    330s]           Wire Direction : HORIZONTAL
+[09/24 15:55:56    330s]             Bounding Box : (34.875 , 35.01) (38.075 , 35.41)
+[09/24 15:55:56    330s]            Routing Layer : metal7(7)
+[09/24 15:55:56    330s]              Wire Status : Routed
+[09/24 15:55:56    330s]                     Rule : default
+[09/24 15:55:56    330s]                     Mask : 0
+[09/24 15:56:01    330s] <CMD> selectNet eco_buf_key_logic_0_4
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM0 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM1 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM2 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM9Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM10Cont -isVisible 1
+[09/24 15:56:06    331s] <CMD> setLayerPreference allM10 -isVisible 1
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM0 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM2 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM9Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM9 -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM10Cont -isVisible 0
+[09/24 15:56:07    331s] <CMD> setLayerPreference allM10 -isVisible 0
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM0 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM1 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM2Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM2 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM3Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM3 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM4Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM4 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM5Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM5 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM6Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM6 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM9Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM9 -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM10Cont -isVisible 1
+[09/24 15:56:10    331s] <CMD> setLayerPreference allM10 -isVisible 1
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM0 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM1 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM2Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM2 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM3Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM3 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM4Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM4 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM5Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM5 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM6Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM6 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM9Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM9 -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM10Cont -isVisible 0
+[09/24 15:56:37    332s] <CMD> setLayerPreference allM10 -isVisible 0
+[09/24 15:56:40    333s] <CMD> setLayerPreference allM10 -isVisible 1
+[09/24 15:56:42    333s] <CMD> setLayerPreference allM10 -isVisible 0
+[09/24 15:56:44    333s] <CMD> setLayerPreference allM8 -isVisible 1
+[09/24 15:56:46    333s] <CMD> setLayerPreference allM9 -isVisible 1
+[09/24 15:56:48    333s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:56:49    333s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:56:50    333s] <CMD> setLayerPreference allM9 -isVisible 0
+[09/24 15:56:52    333s] <CMD> zoomOut
+[09/24 15:56:54    333s] <CMD> zoomOut
+[09/24 15:56:55    333s] <CMD> zoomOut
+[09/24 15:56:57    334s] <CMD> zoomBox 31.428 46.916 69.990 21.703
+[09/24 15:57:09    335s] <CMD> zoomBox 53.178 36.629 60.163 33.337
+[09/24 15:57:12    335s] <CMD> zoomOut
+[09/24 15:57:13    335s] <CMD> zoomOut
+[09/24 15:57:16    335s] <CMD> zoomBox 33.858 39.578 61.346 30.713
+[09/24 15:57:42    336s] <CMD> panPage -1 0
+[09/24 15:57:46    336s] <CMD> panPage 1 0
+[09/24 15:57:50    336s] <CMD> setLayerPreference allM8 -isVisible 0
+[09/24 15:57:50    336s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 15:57:51    337s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:57:53    337s] <CMD> setDrawView fplan
+[09/24 15:57:57    337s] <CMD> setLayerPreference allM10Cont -isVisible 1
+[09/24 15:57:58    337s] <CMD> setLayerPreference allM10Cont -isVisible 0
+[09/24 15:57:59    337s] <CMD> setDrawView place
+[09/24 15:58:02    337s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:58:10    338s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 15:58:12    338s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:58:15    338s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:58:15    338s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:58:16    338s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:58:17    338s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:58:18    338s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:58:19    338s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 15:58:26    339s] <CMD> setLayerPreference allM7Cont -isVisible 0
+[09/24 15:58:29    339s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 15:58:41    339s] <CMD> panPage 1 0
+[09/24 15:58:42    339s] <CMD> panPage 1 0
+[09/24 15:58:42    339s] <CMD> panPage 1 0
+[09/24 15:58:43    339s] <CMD> panPage 1 0
+[09/24 15:58:43    340s] <CMD> panPage 1 0
+[09/24 15:58:43    340s] <CMD> panPage 1 0
+[09/24 15:59:03    340s] <CMD> panPage -1 0
+[09/24 15:59:03    340s] <CMD> panPage -1 0
+[09/24 15:59:04    341s] <CMD> panPage -1 0
+[09/24 15:59:04    341s] <CMD> panPage -1 0
+[09/24 15:59:04    341s] <CMD> panPage -1 0
+[09/24 15:59:05    341s] <CMD> panPage -1 0
+[09/24 15:59:06    341s] <CMD> panPage 1 0
+[09/24 15:59:06    341s] <CMD> panPage 1 0
+[09/24 15:59:07    341s] <CMD> panPage 1 0
+[09/24 15:59:07    341s] <CMD> panPage 1 0
+[09/24 15:59:07    341s] <CMD> panPage 1 0
+[09/24 15:59:15    341s] <CMD> panPage 1 0
+[09/24 15:59:18    341s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 15:59:24    342s] <CMD> panPage -1 0
+[09/24 15:59:24    342s] <CMD> panPage -1 0
+[09/24 15:59:24    342s] <CMD> panPage -1 0
+[09/24 15:59:25    342s] <CMD> panPage -1 0
+[09/24 15:59:25    342s] <CMD> panPage -1 0
+[09/24 15:59:25    342s] <CMD> panPage -1 0
+[09/24 15:59:30    342s] <CMD> panPage 1 0
+[09/24 15:59:30    342s] <CMD> panPage 1 0
+[09/24 15:59:30    342s] <CMD> panPage 1 0
+[09/24 15:59:31    342s] <CMD> panPage 1 0
+[09/24 15:59:31    342s] <CMD> panPage 1 0
+[09/24 15:59:31    342s] <CMD> panPage 1 0
+[09/24 15:59:32    342s] <CMD> panPage 1 0
+[09/24 15:59:32    342s] <CMD> panPage 1 0
+[09/24 15:59:34    342s] <CMD> panPage -1 0
+[09/24 16:01:39    348s] <CMD> setLayerPreference allM8Cont -isVisible 0
+[09/24 16:01:41    348s] <CMD> setLayerPreference allM7 -isVisible 0
+[09/24 16:01:42    348s] <CMD> setLayerPreference allM7Cont -isVisible 1
+[09/24 16:01:44    348s] <CMD> panPage -1 0
+[09/24 16:01:44    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:45    348s] <CMD> panPage -1 0
+[09/24 16:01:46    348s] <CMD> panPage -1 0
+[09/24 16:01:47    348s] <CMD> panPage 1 0
+[09/24 16:01:47    348s] <CMD> panPage 1 0
+[09/24 16:01:47    348s] <CMD> panPage 1 0
+[09/24 16:01:48    348s] <CMD> panPage 1 0
+[09/24 16:01:48    348s] <CMD> panPage 1 0
+[09/24 16:01:48    348s] <CMD> panPage 1 0
+[09/24 16:01:48    348s] <CMD> panPage 1 0
+[09/24 16:01:48    348s] <CMD> panPage 1 0
+[09/24 16:01:49    348s] <CMD> panPage 1 0
+[09/24 16:01:49    348s] <CMD> panPage 1 0
+[09/24 16:01:51    349s] <CMD> panPage -1 0
+[09/24 16:01:51    349s] <CMD> panPage -1 0
+[09/24 16:01:52    349s] <CMD> panPage -1 0
+[09/24 16:01:52    349s] <CMD> panPage -1 0
+[09/24 16:01:53    349s] <CMD> panPage -1 0
+[09/24 16:01:53    349s] <CMD> panPage -1 0
+[09/24 16:01:53    349s] <CMD> panPage -1 0
+[09/24 16:01:54    349s] <CMD> panPage -1 0
+[09/24 16:02:00    349s] <CMD> setDrawView place
+[09/24 16:02:00    349s] <CMD> setDrawView fplan
+[09/24 16:02:03    349s] <CMD> panPage 1 0
+[09/24 16:02:03    349s] <CMD> panPage 1 0
+[09/24 16:02:05    349s] <CMD> fit
+[09/24 16:02:49    352s] <CMD> setLayerPreference allM7 -isVisible 1
+[09/24 16:02:51    352s] <CMD> setDrawView place
+[09/24 16:03:16    353s] <CMD> panPage -1 0
+[09/24 16:03:17    353s] <CMD> panPage -1 0
+[09/24 16:03:17    353s] <CMD> panPage -1 0
+[09/24 16:03:17    353s] <CMD> panPage -1 0
+[09/24 16:03:18    353s] <CMD> panPage -1 0
+[09/24 16:03:19    353s] <CMD> panPage 1 0
+[09/24 16:03:19    353s] <CMD> panPage 1 0
+[09/24 16:03:20    354s] <CMD> panPage 1 0
+[09/24 16:03:20    354s] <CMD> panPage 1 0
+[09/24 16:03:27    354s] <CMD> panPage 1 0
+[09/24 16:03:27    354s] <CMD> panPage 1 0
+[09/24 16:03:28    354s] <CMD> panPage 1 0
+[09/24 16:03:32    354s] <CMD> panPage -1 0
+[09/24 16:03:32    354s] <CMD> panPage -1 0
+[09/24 16:03:33    354s] <CMD> panPage -1 0
+[09/24 16:03:33    354s] <CMD> panPage -1 0
+[09/24 16:03:33    354s] <CMD> panPage -1 0
+[09/24 16:03:34    354s] <CMD> panPage -1 0
+[09/24 16:03:34    354s] <CMD> panPage -1 0
+[09/24 16:03:43    355s] <CMD> panPage 1 0
+[09/24 16:03:44    355s] <CMD> panPage 1 0
+[09/24 16:03:44    355s] <CMD> panPage 1 0
+[09/24 16:03:45    355s] <CMD> panPage 1 0
+[09/24 16:04:06    356s] <CMD> setLayerPreference allM8Cont -isVisible 1
+[09/24 16:04:11    356s] <CMD> panPage 1 0
+[09/25 11:52:24   3454s] 
+[09/25 11:52:24   3454s] *** Memory Usage v#1 (Current mem = 906.527M, initial mem = 191.621M) ***
+[09/25 11:52:24   3454s] 
+[09/25 11:52:24   3454s] *** Summary of all messages that are not suppressed in this session:
+[09/25 11:52:24   3454s] Severity  ID               Count  Summary                                  
+[09/25 11:52:24   3454s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[09/25 11:52:24   3454s] *** Message Summary: 1 warning(s), 0 error(s)
+[09/25 11:52:24   3454s] 
+[09/25 11:52:24   3454s] --- Ending "Innovus" (totcpu=0:57:35, real=21:50:28, mem=906.5M) ---

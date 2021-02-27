@@ -1,0 +1,784 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+Options:	
+Date:		Mon Sep 24 14:01:56 2018
+Host:		aduae260-lap (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB)
+OS:		CentOS release 6.9 (Final)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (516 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> loadLefFile NangateOpenCellLibrary.lef
+
+Loading LEF file NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon Sep 24 14:04:58 2018
+viaInitial ends at Mon Sep 24 14:04:58 2018
+<CMD> loadDefFile /home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def
+Creating netlist for top cell: b14_C ...
+Reading 2738 COMPONENTS ... 
+Done.
+Reading 647 PINS ... 
+Done.
+Reading 2 SPECIALNETS ... 
+Done.
+Reading 3146 NETS ... 
+Done.
+*** End DEF_netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=526.4M) ***
+Writing Netlist "b14_C_.6_6_postlift.def.v" ...
+Resetting process node dependent CCOpt properties.
+Free PSO.
+Resetting process node dependent CCOpt properties.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 522.723M, initial mem = 191.621M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+
+Loading LEF file NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon Sep 24 14:05:43 2018
+viaInitial ends at Mon Sep 24 14:05:43 2018
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.40min, fe_mem=525.8M) ***
+*** Begin netlist parsing (mem=525.8M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'b14_C_.6_6_postlift.def.v'
+
+*** Memory Usage v#1 (Current mem = 525.824M, initial mem = 191.621M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=525.8M) ***
+Top level cell is b14_C.
+LoadLibsFirst: dbBindLib
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell b14_C ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 2738 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 559.586M, initial mem = 191.621M) ***
+*info: set bottom ioPad orient R0
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+
+
+Info (SM2C) :  No usable timing libraries were defined in .conf - physical only mode
+
+
+!INFO (MMMC):  The design is in physical only mode .
+
+
+Reading DEF file '/home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def', current time is Mon Sep 24 14:05:44 2018 ...
+--- DIVIDERCHAR '/'
+--- UnitsPerDBU = 1.0000
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+--- DIEAREA (0 0) (149340 147840)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+defIn read 10000 lines...
+defIn read 20000 lines...
+defIn read 30000 lines...
+defIn read 40000 lines...
+defIn read 50000 lines...
+DEF file '/home/projects/date_19/Results/b14_C/final/lock/b14_C_.6_6_postlift.def' is parsed, current time is Mon Sep 24 14:05:44 2018.
+Updating the floorplan ...
+<CMD> selectInst U2778
+<CMD> zoomSelected
+<CMD> win
+<CMD> fit
+<CMD> setDrawView place
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> selectInst U2778
+<CMD> zoomSelected
+<CMD> win
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_42_buf_inst
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_1_43_buf_inst
+<CMD> selectInst U2259
+<CMD> zoomSelected
+<CMD> win
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_1_43_buf_inst
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> setDrawView place
+<CMD> setLayerPreference net -isVisible 0
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> setLayerPreference net -isVisible 1
+<CMD> setLayerPreference power -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM9Cont -isVisible 0
+<CMD> setLayerPreference allM9 -isVisible 0
+<CMD> setLayerPreference allM10Cont -isVisible 0
+<CMD> setLayerPreference allM10 -isVisible 0
+<CMD> setDrawView place
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> deselectAll
+<CMD> selectWire 48.3150 35.0100 48.7150 35.8300 7 eco_buf_key_logic_1_43
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> selectInst U2258
+<CMD> zoomSelected
+<CMD> win
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectInst U2258
+<CMD> deselectAll
+<CMD> selectInst U2258
+<CMD> deselectAll
+<CMD> selectInst U2258
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> selectInst U2259
+<CMD> win
+<CMD> fit
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> zoomSelected
+<CMD> win
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> zoomSelected
+<CMD> win
+<CMD> fit
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> setDrawView place
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> setDrawView fplan
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setDrawView place
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setDrawView fplan
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setDrawView place
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> deselectAll
+<CMD> selectWire 39.4850 35.4200 39.6250 45.0800 6 FE_OFN25_n3821
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> zoomSelected
+<CMD> win
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_10_buf_inst
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage 0 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> panPage 0 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> fit
+<CMD> panPage 0 -1
+<CMD> panPage 1 0
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage -1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage 0 -1
+<CMD> panPage 1 0
+<CMD> panPage 0 -1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setDrawView fplan
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_4_buf_inst
+<CMD> zoomSelected
+<CMD> win
+<CMD> deselectAll
+<CMD> selectInst u_key_logic_0_4_buf_inst
+<CMD> fit
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setDrawView place
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage 0 1
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM9 -isVisible 1
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM10 -isVisible 1
+<CMD> setLayerPreference allM10 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 0 -1
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> deselectAll
+<CMD> selectWire 34.8750 35.0100 38.0750 35.4100 7 eco_buf_key_logic_0_4
+<CMD> get_visible_nets
+<CMD> reportSelect
+
+
+             Object Type : Regular Wire
+                Net Name : eco_buf_key_logic_0_4
+          Wire Direction : HORIZONTAL
+            Bounding Box : (34.875 , 35.01) (38.075 , 35.41)
+           Routing Layer : metal7(7)
+             Wire Status : Routed
+                    Rule : default
+                    Mask : 0
+<CMD> selectNet eco_buf_key_logic_0_4
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM9Cont -isVisible 1
+<CMD> setLayerPreference allM10Cont -isVisible 1
+<CMD> setLayerPreference allM10 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM9Cont -isVisible 0
+<CMD> setLayerPreference allM9 -isVisible 0
+<CMD> setLayerPreference allM10Cont -isVisible 0
+<CMD> setLayerPreference allM10 -isVisible 0
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM4Cont -isVisible 1
+<CMD> setLayerPreference allM4 -isVisible 1
+<CMD> setLayerPreference allM5Cont -isVisible 1
+<CMD> setLayerPreference allM5 -isVisible 1
+<CMD> setLayerPreference allM6Cont -isVisible 1
+<CMD> setLayerPreference allM6 -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM9Cont -isVisible 1
+<CMD> setLayerPreference allM9 -isVisible 1
+<CMD> setLayerPreference allM10Cont -isVisible 1
+<CMD> setLayerPreference allM10 -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM4Cont -isVisible 0
+<CMD> setLayerPreference allM4 -isVisible 0
+<CMD> setLayerPreference allM5Cont -isVisible 0
+<CMD> setLayerPreference allM5 -isVisible 0
+<CMD> setLayerPreference allM6Cont -isVisible 0
+<CMD> setLayerPreference allM6 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM9Cont -isVisible 0
+<CMD> setLayerPreference allM9 -isVisible 0
+<CMD> setLayerPreference allM10Cont -isVisible 0
+<CMD> setLayerPreference allM10 -isVisible 0
+<CMD> setLayerPreference allM10 -isVisible 1
+<CMD> setLayerPreference allM10 -isVisible 0
+<CMD> setLayerPreference allM8 -isVisible 1
+<CMD> setLayerPreference allM9 -isVisible 1
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM9 -isVisible 0
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomBox 31.428 46.916 69.990 21.703
+<CMD> zoomBox 53.178 36.629 60.163 33.337
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomBox 33.858 39.578 61.346 30.713
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM8 -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setDrawView fplan
+<CMD> setLayerPreference allM10Cont -isVisible 1
+<CMD> setLayerPreference allM10Cont -isVisible 0
+<CMD> setDrawView place
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> setLayerPreference allM7Cont -isVisible 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> setLayerPreference allM8Cont -isVisible 0
+<CMD> setLayerPreference allM7 -isVisible 0
+<CMD> setLayerPreference allM7Cont -isVisible 1
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> fit
+<CMD> setLayerPreference allM7 -isVisible 1
+<CMD> setDrawView place
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> setLayerPreference allM8Cont -isVisible 1
+<CMD> panPage 1 0
+u_key_logic_1_44_buf_inst u_key_logic_1_43_buf_inst u_key_logic_1_42_buf_inst u_key_logic_1_41_buf_inst u_key_logic_1_40_buf_inst u_key_logic_1_39_buf_inst u_key_logic_1_38_buf_inst u_key_logic_1_37_buf_inst u_key_logic_1_36_buf_inst u_key_logic_1_35_buf_inst u_key_logic_1_34_buf_inst u_key_logic_1_33_buf_inst u_key_logic_1_32_buf_inst u_key_logic_1_31_buf_inst u_key_logic_1_30_buf_inst u_key_logic_1_29_buf_inst u_key_logic_1_28_buf_inst u_key_logic_1_27_buf_inst u_key_logic_1_26_buf_inst u_key_logic_1_25_buf_inst u_key_logic_1_24_buf_inst u_key_logic_1_23_buf_inst u_key_logic_1_21_buf_inst u_key_logic_1_20_buf_inst u_key_logic_1_19_buf_inst u_key_logic_1_18_buf_inst u_key_logic_1_17_buf_inst u_key_logic_1_16_buf_inst u_key_logic_1_15_buf_inst u_key_logic_1_14_buf_inst u_key_logic_1_13_buf_inst u_key_logic_1_12_buf_inst u_key_logic_1_11_buf_inst u_key_logic_1_10_buf_inst u_key_logic_1_9_buf_inst u_key_logic_1_8_buf_inst u_key_logic_1_7_buf_inst u_key_logic_1_6_buf_inst u_key_logic_1_5_buf_inst u_key_logic_1_4_buf_inst u_key_logic_1_3_buf_inst u_key_logic_1_2_buf_inst u_key_logic_1_1_buf_inst u_key_logic_1_0_buf_inst u_key_logic_0_81_buf_inst u_key_logic_0_80_buf_inst u_key_logic_0_79_buf_inst u_key_logic_0_78_buf_inst u_key_logic_0_77_buf_inst u_key_logic_0_76_buf_inst u_key_logic_0_75_buf_inst u_key_logic_0_74_buf_inst u_key_logic_0_73_buf_inst u_key_logic_0_72_buf_inst u_key_logic_0_71_buf_inst u_key_logic_0_70_buf_inst u_key_logic_0_69_buf_inst u_key_logic_0_68_buf_inst u_key_logic_0_67_buf_inst u_key_logic_0_66_buf_inst u_key_logic_0_65_buf_inst u_key_logic_0_64_buf_inst u_key_logic_0_63_buf_inst u_key_logic_0_62_buf_inst u_key_logic_0_61_buf_inst u_key_logic_0_60_buf_inst u_key_logic_0_59_buf_inst u_key_logic_0_58_buf_inst u_key_logic_0_57_buf_inst u_key_logic_0_56_buf_inst u_key_logic_0_55_buf_inst u_key_logic_0_54_buf_inst u_key_logic_0_53_buf_inst u_key_logic_0_52_buf_inst u_key_logic_0_51_buf_inst u_key_logic_0_50_buf_inst u_key_logic_0_49_buf_inst u_key_logic_0_48_buf_inst u_key_logic_0_47_buf_inst u_key_logic_0_46_buf_inst u_key_logic_0_45_buf_inst u_key_logic_0_44_buf_inst u_key_logic_0_43_buf_inst u_key_logic_0_42_buf_inst u_key_logic_0_41_buf_inst u_key_logic_0_40_buf_inst u_key_logic_0_39_buf_inst u_key_logic_0_38_buf_inst u_key_logic_0_37_buf_inst u_key_logic_0_36_buf_inst u_key_logic_0_35_buf_inst u_key_logic_0_34_buf_inst u_key_logic_0_33_buf_inst u_key_logic_0_32_buf_inst u_key_logic_0_31_buf_inst u_key_logic_0_30_buf_inst u_key_logic_0_29_buf_inst u_key_logic_0_28_buf_inst u_key_logic_0_27_buf_inst u_key_logic_0_26_buf_inst ...
+
+*** Memory Usage v#1 (Current mem = 906.527M, initial mem = 191.621M) ***
+*** Message Summary: 1 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:57:35, real=21:50:28, mem=906.5M) ---

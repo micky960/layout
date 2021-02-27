@@ -1,0 +1,42 @@
+[05/16 19:14:08      0s] 
+[05/16 19:14:08      0s] Cadence Innovus(TM) Implementation System.
+[05/16 19:14:08      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/16 19:14:08      0s] 
+[05/16 19:14:08      0s] Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+[05/16 19:14:08      0s] Options:	-no_gui 
+[05/16 19:14:08      0s] Date:		Sat May 16 19:14:08 2020
+[05/16 19:14:08      0s] Host:		aduae260-lap (x86_64 w/Linux 2.6.32-754.14.2.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB)
+[05/16 19:14:08      0s] OS:		CentOS release 6.10 (Final)
+[05/16 19:14:08      0s] 
+[05/16 19:14:08      0s] License:
+[05/16 19:14:08      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[05/16 19:14:08      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/16 19:14:21     13s] @(#)CDS: Innovus v17.12-s095_1 (64bit) 11/09/2017 12:10 (Linux 2.6.18-194.el5)
+[05/16 19:14:21     13s] @(#)CDS: NanoRoute 17.12-s095_1 NR171102-1913/17_12-UB (database version 2.30, 405.7.1) {superthreading v1.44}
+[05/16 19:14:21     13s] @(#)CDS: AAE 17.12-s040 (64bit) 11/09/2017 (Linux 2.6.18-194.el5)
+[05/16 19:14:21     13s] @(#)CDS: CTE 17.12-s036_1 () Nov  2 2017 09:33:40 ( )
+[05/16 19:14:21     13s] @(#)CDS: SYNTECH 17.12-s012_1 () Oct 31 2017 04:30:11 ( )
+[05/16 19:14:21     13s] @(#)CDS: CPE v17.12-s076
+[05/16 19:14:21     13s] @(#)CDS: IQRC/TQRC 16.1.1-s220 (64bit) Fri Aug  4 09:53:48 PDT 2017 (Linux 2.6.18-194.el5)
+[05/16 19:14:21     13s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[05/16 19:14:21     13s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[05/16 19:14:21     13s] @(#)CDS: RCDB 11.10
+[05/16 19:14:21     13s] --- Running on aduae260-lap (x86_64 w/Linux 2.6.32-754.14.2.el6.x86_64) (16cores*128cpus*Intel(R) Xeon(R) CPU E5-4660 v4 @ 2.20GHz 40960KB) ---
+[05/16 19:14:21     13s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_18650_aduae260-lap_as9397_XFlYdo.
+
+[05/16 19:14:21     13s] Change the soft stacksize limit to 0.2%RAM (1550 mbytes). Set global soft_stack_size_limit to change the value.
+[05/16 19:14:21     13s] 
+[05/16 19:14:21     13s] **INFO:  MMMC transition support version v31-84 
+[05/16 19:14:21     13s] 
+[05/16 19:14:21     13s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/16 19:14:21     13s] <CMD> suppressMessage ENCEXT-2799
+[05/16 19:14:33     13s] <CMD> man loadECO
+[05/16 19:15:00     13s] <CMD> man globalDetailRoute
+[05/16 19:15:28     13s] <CMD> man ecoRoute
+[05/16 19:43:37     14s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[05/16 19:43:37     14s] Innovus terminated by user interrupt.
+[05/16 19:43:37     14s] 
+[05/16 19:43:37     14s] *** Memory Usage v#1 (Current mem = 434.785M, initial mem = 183.621M) ***
+[05/16 19:43:37     14s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/16 19:43:37     14s] 
+[05/16 19:43:37     14s] --- Ending "Innovus" (totcpu=0:00:14.3, real=0:29:29, mem=434.8M) ---

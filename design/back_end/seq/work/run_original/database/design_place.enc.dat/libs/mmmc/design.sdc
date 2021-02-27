@@ -1,0 +1,1 @@
+/home/as9397/to_abh/design/front_end/seq/seq_RTL.sdc
